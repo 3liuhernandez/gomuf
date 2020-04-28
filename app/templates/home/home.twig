@@ -1,158 +1,210 @@
 {% extends 'overall/layout' %}
 {% block appBody %}
-<!-- The App Section -->
+<!-- Proyecto E-Book Section -->
 <div class="w3-padding-64 w3-white">
-  <div class="w3-row-padding">
-    <div class="w3-col l8 m6">
-      <h1 class="w3-jumbo"><b>The App</b></h1>
-      <h1 class="w3-xxxlarge w3-text-green"><b>Why buy it?</b></h1>
-      <p><span class="w3-xlarge">Take photos like a pro.</span> You should buy this app because lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-      <button class="w3-button w3-light-grey w3-padding-large w3-section w3-hide-small" onclick="document.getElementById('download').style.display='block'">
-        <i class="fa fa-download"></i> Download Application
-      </button>
-      <p>Available for <i class="fa fa-android w3-xlarge w3-text-green"></i> <i class="fa fa-apple w3-xlarge"></i> <i class="fa fa-windows w3-xlarge w3-text-blue"></i></p>
+    <div class="w3-row-padding">
+        <div class="w3-col l8 m6">
+            <h2 class="w3-jumbo"><b>Proyecto E-Book</b></h2>
+            <h3 class="w3-xxxlarge w3-text-blue"><b> REENCUENTRO CON LAS NUEVAS GENERACIONES POST COVID 19</b></h3>
+            <p>
+                <span class="w3-xlarge">Breve descripción del libro:</span><br>
+                ¿Cómo conectar con las nuevas generaciones post COVID 19? ¿Cuáles serán los nuevos desafíos que nos traerá el nuevo escenario en trabajo con las nuevas generaciones? Este libro nos presenta una cosmovisión desde una perspectiva psicosocial y teológica de lo que podrían ser los posibles escenarios y modos de abordar en la conexión con los jóvenes luego de superada la pandemia. 
+                <br><br>
+                Un vistazo a las nuevas generaciones pre COVID 19, los efectos psicosociales en tiempo de cuarentena, el proceso de ampliar una mayor compresión de la nueva realidad para hacer ser efectivos y eficientes en el abordaje de los jóvenes para ayudarles a desarrollar su potencial integralmente. Anticipar los nuevos desafíos de este escenario post COVID 19, conectando con las nuevas generaciones de forma autentica para promover una metamorfosis total que afecte positivamente el futuro de nuestras naciones. 
+                <br><br>
+                Puedes descargar este libro que será útil para los jóvenes, líderes juveniles, docentes, profesores universitarios, padres y todas las organizaciones que trabajan en medio de las comunidades de las nuevas generaciones. Luego de leerlo déjanos saber tu opinión del libro, colgando tu comentario en esta página. 
+                <br><br>
+                GoMUF está trabajando en otros materiales y recursos útiles para todos! 
+            </p>
+            <p>
+                <i><strong>Autor: Darío Ortega </strong><i> &nbsp;
+                <i class="fa fa-facebook w3-xlarge w3-text-green"></i> &nbsp;
+                <i class="fa fa-instagram w3-xlarge"></i> &nbsp;
+                <i class="fa fa-whatsapp w3-xlarge w3-text-blue"></i>
+            </p>
+            <!--
+            <button class="w3-button w3-light-grey w3-padding-large w3-section w3-hide-small" onclick="document.getElementById('download').style.display='block'">
+                <i class="fa fa-download"></i> Descargar el Libro.
+            </button>
+            -->
+        </div>
+        <div class="w3-col l4 m6">
+            <img src="https://www.w3schools.com/w3images/img_app.jpg" class="w3-image w3-right w3-hide-small" width="335" height="471">
+
+            <button class="w3-button w3-light-grey w3-padding-large w3-section w3-hide-small w3-right" onclick="document.getElementById('download').style.display='block'">
+                <i class="fa fa-download"></i> Adquiere una copia del libro.
+            </button>
+
+            <div class="w3-center w3-hide-large w3-hide-medium">
+                <button class="w3-button w3-block w3-padding-large" onclick="document.getElementById('download').style.display='block'">
+                    <i class="fa fa-download"></i> Download Application
+                </button>
+                <img src="https://www.w3schools.com/w3images/img_app.jpg" class="w3-image w3-margin-top" width="335" height="471">
+            </div>
+        </div>
     </div>
-    <div class="w3-col l4 m6">
-      <img src="https://www.w3schools.com/w3images/img_app.jpg" class="w3-image w3-right w3-hide-small" width="335" height="471">
-      <div class="w3-center w3-hide-large w3-hide-medium">
-        <button class="w3-button w3-block w3-padding-large" onclick="document.getElementById('download').style.display='block'">
-          <i class="fa fa-download"></i> Download Application
-        </button>
-        <img src="https://www.w3schools.com/w3images/img_app.jpg" class="w3-image w3-margin-top" width="335" height="471">
-      </div>
-    </div>
-  </div>
 </div>
 
 <!-- Modal -->
 <div id="download" class="w3-modal w3-animate-opacity">
-  <div class="w3-modal-content" style="padding:32px">
-    <div class="w3-container w3-white">
-      <i onclick="document.getElementById('download').style.display='none'" class="fa fa-remove w3-xlarge w3-button w3-transparent w3-right w3-xlarge"></i>
-      <h2 class="w3-wide">DOWNLOAD</h2>
-      <p>Download the app in AppStore, Google Play or Microsoft Store.</p>
-      <i class="fa fa-android w3-large"></i> <i class="fa fa-apple w3-large"></i> <i class="fa fa-windows w3-large"></i>
-      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
-      <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('download').style.display='none'">Fake Download</button>
-    </div>
-  </div>
+<div class="w3-modal-content" style="padding:32px">
+<div class="w3-container w3-white">
+<i onclick="document.getElementById('download').style.display='none'" class="fa fa-remove w3-xlarge w3-button w3-transparent w3-right w3-xlarge"></i>
+<h2 class="w3-wide">DOWNLOAD</h2>
+<p>Download the app in AppStore, Google Play or Microsoft Store.</p>
+<i class="fa fa-android w3-large"></i> <i class="fa fa-apple w3-large"></i> <i class="fa fa-windows w3-large"></i>
+<p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+<button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('download').style.display='none'">Fake Download</button>
+</div>
+</div>
 </div>
 
-<!-- Clarity Section -->
-<div class="w3-padding-64 w3-light-grey">
-  <div class="w3-row-padding">
-    <div class="w3-col l4 m6">
-      <img class="w3-image w3-round-large w3-hide-small w3-grayscale" src="https://www.w3schools.com/w3images/app5.jpg" alt="App" width="335" height="471">
+<!-- nosotros Proyecto MUF Section -->
+<div class="w3-padding-64 w3-light-grey" id="nosotros">
+    <div class="w3-row-padding">
+        <div class="w3-col l4 m6">
+            <img class="w3-image w3-round-large w3-hide-small w3-grayscale" src="https://www.w3schools.com/w3images/app5.jpg" alt="App" width="335" height="471">
+        </div>
+        <div class="w3-col l8 m6">
+            <p class="w3-center">
+                <b class="w3-jumbo">Proyecto MUF</b>
+                <br>
+                <b class="w3-xxxlarge w3-text-blue">Misión Ultima Frontera</b>
+            </p>
+            <hr>
+            <p class="w3-xlarge">
+                <span class="w3-xxxlarge w3-text-red">Visión</span><br>
+                Ver Valencia, Venezuela y el mundo liderada por personas comprometidas con Cristo.
+            </p>
+
+            <p class="w3-xlarge">
+                <span class="w3-xxxlarge w3-text-red">Misión </span><br>
+                Hacer discípulos multiplicadores a partir de la comunidad universitaria y profesional a través de un ministerio integral. 
+            </p>
+        </div>
     </div>
-    <div class="w3-col l8 m6">
-      <h1 class="w3-jumbo"><b>Clarity</b></h1>
-      <h1 class="w3-xxxlarge w3-text-red"><b>Pixels, who?</b></h1>
-      <p><span class="w3-xlarge">A revolution in resolution.</span> Sharp and clear photos with the world's best photo engine, incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-    </div>
-  </div>
 </div>
 
-<!-- Features Section -->
-<div class="w3-container w3-padding-64 w3-dark-grey w3-center">
-  <h1 class="w3-jumbo"><b>Features</b></h1>
-  <p>This app is just so lorem ipsum.</p>
+<!-- Valores Section -->
+<div class="w3-container w3-padding-64 w3-dark-grey w3-center" id="valores">
+    <h1 class="w3-jumbo"><b>Valores</b></h1>
+    <p>En nuestro entorno, cultivamos e insentivamos los valores.</p>
 
-  <div class="w3-row" style="margin-top:64px">
-    <div class="w3-col s3">
-      <i class="fa fa-bolt w3-text-orange w3-jumbo"></i>
-      <p>Fast</p>
+    <div class="w3-row" style="margin-top:64px">
+        <div class="w3-col s3">
+            <i class="fa fa-bolt w3-text-orange w3-jumbo"></i>
+            <p>EXCELENCIA</p>
+        </div>
+        <div class="w3-col s3">
+            <i class="fa fa-heart w3-text-red w3-jumbo"></i>
+            <p>SOLIDARIDAD</p>
+        </div>
+        <div class="w3-col s3">
+            <i class="fa fa-handshake-o w3-text-yellow w3-jumbo"></i>
+            <p>COMPROMISO</p>
+        </div>
+        <div class="w3-col s3">
+            <i class="fa fa-child w3-text-green w3-jumbo"></i>
+            <p>GRATITUD </p>
+        </div>
     </div>
-    <div class="w3-col s3">
-      <i class="fa fa-heart w3-text-red w3-jumbo"></i>
-      <p>Loved</p>
-    </div>
-    <div class="w3-col s3">
-      <i class="fa fa-camera w3-text-yellow w3-jumbo"></i>
-      <p>Clarity</p>
-    </div>
-    <div class="w3-col s3">
-      <i class="fa fa-battery-full w3-text-green w3-jumbo"></i>
-      <p>Power</p>
-    </div>
-  </div>
-
-  <div class="w3-row" style="margin-top:64px">
-    <div class="w3-col s3">
-      <i class="fa fa-diamond w3-text-white w3-jumbo"></i>
-      <p>Sharp</p>
-    </div>
-    <div class="w3-col s3">
-      <i class="fa fa-cloud w3-text-blue w3-jumbo"></i>
-      <p>Cloud</p>
-    </div>
-    <div class="w3-col s3">
-      <i class="fa fa-globe w3-text-amber w3-jumbo"></i>
-      <p>Global</p>
-    </div>
-    <div class="w3-col s3">
-      <i class="fa fa-hdd-o w3-text-cyan w3-jumbo"></i>
-      <p>Storage</p>
-    </div>
-  </div>
-  
-  <div class="w3-row" style="margin-top:64px">
-    <div class="w3-col s3">
-      <i class="fa fa-user w3-text-sand w3-jumbo"></i>
-      <p>Safe</p>
-    </div>
-    <div class="w3-col s3">
-      <i class="fa fa-shield w3-text-orange w3-jumbo"></i>
-      <p>Stabile</p>
-    </div>
-    <div class="w3-col s3">
-      <i class="fa fa-wifi w3-text-grey w3-jumbo"></i>
-      <p>Connected</p>
-    </div>
-    <div class="w3-col s3">
-      <i class="fa fa-image w3-text-pink w3-jumbo"></i>
-      <p>HD</p>
-    </div>
-  </div>
 </div>
 
-<!-- Pricing Section -->
-<div class="w3-padding-64 w3-center w3-white">
-  <h1 class="w3-jumbo"><b>Pricing</b></h1>
-  <p class="w3-large">Choose a pricing plan that fits your needs.</p>
-  <div class="w3-row-padding" style="margin-top:64px">
-    <div class="w3-half w3-section">
-      <ul class="w3-ul w3-card w3-hover-shadow">
-        <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
-        <li class="w3-padding-16"><b>250</b> Photos</li>
-        <li class="w3-padding-16"><b>10</b> Features</li>
-        <li class="w3-padding-16"><b>No</b> Ads</li>
-        <li class="w3-padding-16"><b>Office hours</b> Support</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-opacity">$ 25</h2>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-black w3-padding-large" onclick="document.getElementById('download').style.display='block'"><i class="fa fa-download"></i> Download</button>
-        </li>
-      </ul>
+
+<!-- Staff Section -->
+<div class="w3-container" style="padding:128px 16px" id="staff">
+  <h3 class="w3-center w3-jumbo">Staff</h3>
+  <!--<p class="w3-center w3-large">Coordinadores de Proyecto Global</p>-->
+
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom w3-left">
+      <div class="w3-card">
+        <div class="w3-container">
+          <h3>Dario Ortega</h3>
+          <p class="w3-opacity">CEO GOMUF</p>
+          <p class="w3-large">
+              Terapeuta Psicosocial<br>
+              Teólogo<br>
+              Coaching de Liderazgo<br>
+              Docente Universitario<br>
+              Líder Chapel Navegantes del Magallanes (LBPV)<br>
+              Coordinador FCA Carabobo<br>
+              Miembro del equipo pastoral IB MUF Valencia
+          </p>
+        </div>
+      </div>
     </div>
-    <div class="w3-half w3-section">
-      <ul class="w3-ul w3-card w3-hover-shadow">
-        <li class="w3-red w3-xlarge w3-padding-32">Premium</li>
-        <li class="w3-padding-16"><b>1000</b> Photos</li>
-        <li class="w3-padding-16"><b>50</b> Features</li>
-        <li class="w3-padding-16"><b>No</b> Ads</li>
-        <li class="w3-padding-16"><b>Endless</b> Support</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-opacity">$ 99</h2>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-black w3-padding-large" onclick="document.getElementById('download').style.display='block'"> <i class="fa fa-download"></i> Download</button>
-        </li>
-      </ul>
+
+    <div class="w3-col l3 m6 w3-margin-bottom w3-left">
+        <div class="w3-card">
+            <img src="https://www.w3schools.com/w3images/team4.jpg" alt="John" style="width:100%">
+        </div>
+    </div>
+
+    <div class="w3-col l3 m6 w3-margin-bottom w3-right">
+      <div class="w3-card">
+        <div class="w3-container">
+          <h3>Luzmery Albornoz de Ortega</h3>
+          <p class="w3-opacity">Directora GOMUF</p>
+          <p class="w3-large">
+              Psicóloga<br>
+              Terapeuta Psicosocial<br>
+              Docente Universitaria<br>
+              Líder Chapel Navegantes del Magallanes (LBPV)<br>
+              Miembro del Equipo Pastoral IB MUF Valencia
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-col l3 m6 w3-margin-bottom w3-right">
+        <div class="w3-card">
+            <img src="https://www.w3schools.com/w3images/team1.jpg" alt="John" style="width:100%">
+        </div>
+    </div>
+
+  </div>
+
+    <div class="w3-row-padding w3-center">
+        <p class="w3-xxlarge">
+            Ambos suman más de 25 años de experiencia de trabajo con los niños y los jóvenes en diferentes espacios, entre ellos los últimos años en los campus universitarios en Venezuela. Han participado en múltiples conferencias, congresos, talleres y charlas compartiendo experiencia y enseñanzas en medio de las nuevas generaciones.
+        </p>
+    </div>
+</div>
+
+
+<!-- Contact Container -->
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contacto</span></div>
+      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>Valencia, Venezuela</p>
+      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i> +58 414 4371968</p>
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i> mufvalencia@gmail.com</p>
+      <p><i class="fa fa-facebook w3-text-teal w3-xlarge"></i> Misión Última Frontera Valencia</p>
+      <p><i class="fa fa-instagram w3-text-teal w3-xlarge"></i> @mufvalencia</p>
+    </div>
+    <div class="w3-col m7">
+      <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
+      <div class="w3-section">      
+        <label>Name</label>
+        <input class="w3-input" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">      
+        <label>Email</label>
+        <input class="w3-input" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">      
+        <label>Message</label>
+        <input class="w3-input" type="text" name="Message" required>
+      </div>  
+      <input class="w3-check" type="checkbox" checked name="Like">
+      <label>I Like it!</label>
+      <button type="submit" class="w3-button w3-right w3-theme">Send</button>
+      </form>
     </div>
   </div>
   <br>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26419.166210981297!2d-68.00438364898079!3d10.161742985473364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e80678bce61928f%3A0x9f78e9eea8c34272!2sValencia%2C%20Carabobo!5e0!3m2!1ses-419!2sve!4v1588049595013!5m2!1ses-419!2sve" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 </div>
 {% endblock %}

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
     {% block appHeader %}{% endblock %}
     <style>
         body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
@@ -16,7 +17,29 @@
         .mySlides {display: none;}
     </style>
 </head>
-<body class="w3-content w3-black" style="max-width:1500px;">
+<body class="w3-content w3-blue" style="max-width:1500px;">
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+        <a href="#home" class="w3-bar-item w3-button"><b>GOMUF</b></a>
+        <!-- Float links to the right. Hide them on small screens -->
+        <div class="w3-right w3-hide-small">
+            <a href="#nosotros" class="w3-bar-item w3-button">Nosotros</a>
+            <a href="#valores" class="w3-bar-item w3-button">Valores</a>
+            <a href="#staff" class="w3-bar-item w3-button">Staff</a>
+            <a href="#contact" class="w3-bar-item w3-button">Contacto</a>
+        </div>
+    </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32" style="margin-top: 5%">
+    <h1><b>Proyecto Global</b></h1>
+    <!--<p> <span class="w3-tag w3-white">Metamorfosis Universitaria Fraternity</span></p>-->
+    <h3><b><i>Metamorfosis Universitaria Fraternity</i></b></h3>
+</header>
+
 
 <header class="w3-display-container w3-center">
     <button class="w3-button w3-block w3-green w3-hide-large w3-hide-medium" onclick="document.getElementById('download').style.display='block'">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button>
@@ -62,7 +85,7 @@
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-32 w3-light-grey w3-center w3-xlarge">
-  <div class="w3-section">
+  <div class="w3-section w3-hide">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
     <i class="fa fa-instagram w3-hover-opacity"></i>
     <i class="fa fa-snapchat w3-hover-opacity"></i>
@@ -70,7 +93,7 @@
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
   </div>
-  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">GoMuf Developers</a></p>
 </footer>
 
 <script>
