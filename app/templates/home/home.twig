@@ -8,21 +8,21 @@
         position: relative;
     }
     .black-background{
-        background-color: #000;
+        background-color: #f1f1f1;
         padding: 10px;
         border-radius: 8px;
-        opacity: 0.60;
+        opacity: 0.80;
         transition: all .3s;
-    }
-    p.black-background{
-        color: #FFF;
     }
 
     .black-background:hover{
         opacity: 1;
     }
-
-    #nosotros img{ margin-top: 32px; }
+    #nosotros{
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        min-height: 700px;
+    }
 
     /* .bg-cover .w3-row-padding{
         position: relative;
@@ -101,25 +101,27 @@
 
 <!-- nosotros Proyecto MUF Section -->
 <div class="w3-padding-64 w3-light-grey bg-cover" style="background-image:url('assets/app/img/fondo.jpg')" id="nosotros">
-    <div class="w3-row-padding">
-        <div class="w3-col l4 m6">
-            <img class="w3-image w3-round-large w3-hide-small w3-grayscale" src="assets/app/img/foto2.jpeg" alt="App" width="335" height="471">
-        </div>
-        <div class="w3-col l8 m6">
-            <p class="w3-center black-background" style="margin-top: 0"; >
-                <b class="w3-jumbo">Proyecto MUF</b>
-                <br>
-                <b class="w3-xxxlarge w3-text-blue">Misión Ultima Frontera</b>
-            </p>
-            <hr>
-            <p class="w3-xlarge black-background">
-                <span class="w3-xxxlarge w3-text-red">Visión</span><br>
-                Ver Valencia, Venezuela y el mundo liderada por personas comprometidas con Cristo.
-            </p>
 
+    <div class="w3-row-padding">
+        <div class="w3-col l12 m12 ">
+            <p class="w3-center black-background title">
+                <b class="w3-xxlarge">Proyecto MUF</b> 
+                <b class="w3-xlarge w3-text-blue">Meta morfosis universitaria</b>
+            </p>
+        </div>
+    </div>
+
+    <div class="w3-row-padding w3-center">
+        <div class="w3-col l6 m6">
             <p class="w3-xlarge black-background">
-                <span class="w3-xxxlarge w3-text-red">Misión </span><br>
-                Hacer discípulos multiplicadores a partir de la comunidad universitaria y profesional a través de un ministerio integral. 
+                <span class="w3-xlarge w3-text-red title">Misión </span><br>
+                <span class="text w3-large">Hacer discípulos multiplicadores a partir de la comunidad universitaria y profesional a través de un ministerio integral. </span>
+            </p>
+        </div>
+        <div class="w3-col l6 m6">
+            <p class="w3-xlarge black-background">
+                <span class="w3-xlarge w3-text-red title">Visión</span><br>
+                <span class="text w3-large">Ver Valencia, Venezuela y el mundo liderada por personas comprometidas con Cristo.</span>
             </p>
         </div>
     </div>
