@@ -50,7 +50,7 @@
 <div id="download" class="w3-modal w3-animate-opacity">
     <div class="w3-modal-content" style="padding:32px">
         <div class="w3-row">
-            <div class="w3-container w3-white w3-col l6 m7">
+            <form id="download_form" class="w3-container w3-white w3-col l6 m7">
                 <h3 class="w3-wide w3-center w3-text-green"><strong>REENCUENTRO CON LAS NUEVAS GENERACIONES POST COVID 19</strong></h3>
                 <hr>
                 <p class="w3-large w3-text-gray">
@@ -67,8 +67,8 @@
                 </div>
                 <textarea col="5" row="5" class="w3-input w3-border" placeholder="Mensaje" required name="msj"></textarea>
                 <hr>
-                <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('download').style.display='none'">Descargar E-Book</button>
-            </div>
+                <button id="download_btn" type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Descargar E-Book</button>
+            </form>
             <div class="w3-container w3-rest">
                 <i onclick="document.getElementById('download').style.display='none'" class="fa fa-remove w3-xlarge w3-button w3-text-red w3-right w3-hover-text-green w3-hover-white"></i>
                 <br><br><br>
@@ -326,7 +326,7 @@
         </div>
         <p class="w3-xlarge">Si gustas contactarte con nosotros, puedes enviarnos un mensaje a nuestro correo electronico o bien puedes escribirnos
         por aquí: </p>
-        <form action="/action_page.php" target="_blank">
+        <form id="contact_form">
             <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
             <div class="w3-half">
                 <input class="w3-input w3-border" type="text" placeholder="Nombre" required name="name">
@@ -336,11 +336,15 @@
             </div>
             </div>
             <input class="w3-input w3-border" type="text" placeholder="Mensaje" required name="msj">
-            <button class="w3-button w3-green w3-hover-text-green w3-right w3-section" type="submit">
-            <i class="fa fa-paper-plane"></i> Envíar Mensaje
+                <button id="contact_btn" class="w3-button w3-green w3-hover-text-green w3-right w3-section" type="submit">
+                <i class="fa fa-paper-plane"></i> Envíar Mensaje
             </button>
         </form>
         </div>
     </div>
 </div>
+{% endblock %}
+
+{% block appFooter %}
+<script src="assets/jscontrollers/home/actions.js"></script>
 {% endblock %}

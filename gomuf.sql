@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 28-04-2020 a las 02:27:49
+-- Tiempo de generación: 01-05-2020 a las 18:57:54
 -- Versión del servidor: 10.4.11-MariaDB
 -- Versión de PHP: 7.4.1
 
@@ -25,6 +25,19 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `suscripcion`
+--
+
+CREATE TABLE `suscripcion` (
+  `id_suscriptor` int(10) UNSIGNED NOT NULL,
+  `name` varchar(30) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `message` text DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `users`
 --
 
@@ -42,6 +55,12 @@ CREATE TABLE `users` (
 --
 
 --
+-- Indices de la tabla `suscripcion`
+--
+ALTER TABLE `suscripcion`
+  ADD PRIMARY KEY (`id_suscriptor`);
+
+--
 -- Indices de la tabla `users`
 --
 ALTER TABLE `users`
@@ -51,6 +70,12 @@ ALTER TABLE `users`
 --
 -- AUTO_INCREMENT de las tablas volcadas
 --
+
+--
+-- AUTO_INCREMENT de la tabla `suscripcion`
+--
+ALTER TABLE `suscripcion`
+  MODIFY `id_suscriptor` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `users`

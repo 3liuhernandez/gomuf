@@ -25,6 +25,7 @@ mailer:
   user: gomuf.com@gmail.com
   pass: 123456R*e
   port: 587
+  logo: 
 
 # Configuración de twig
 twig:

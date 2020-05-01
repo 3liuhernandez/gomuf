@@ -43,3 +43,27 @@ $app->post('/lostpass', function() use($app) {
 
     return $app->json($u->lostpass());   
 });
+
+
+/**
+    * Mensaje de contacto
+    *
+    * @return json
+*/
+$app->post('/contact', function() use($app) {
+    $u = new Model\Home; 
+
+    return $app->json($u->contact());   
+});
+
+
+/**
+    * Descarga el libro
+    *
+    * @return json
+*/
+$app->post('/download/book', function() use($app) {
+    $u = new Model\Home; 
+
+    return $app->json($u->download());   
+});
