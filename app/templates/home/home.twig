@@ -37,6 +37,11 @@
         height: 100%;
         background-color: rgba(241, 241, 241, 0.8);
     } */
+
+    .nombre_casa_estudio{
+        font-weight: 600;
+        padding: 5% !important;
+    }
 </style>
 {% endblock %}
 {% block appBody %}
@@ -128,33 +133,33 @@
 </div>
 
 <!-- Valores Section -->
-<div class="w3-container w3-padding-64 w3-dark-grey w3-center" id="valores">
-    <h1 class="w3-jumbo"><b>Valores</b></h1>
-    <p>En nuestro entorno, cultivamos e insentivamos los valores.</p>
+<div class="w3-container w3-padding-64 w3-center" id="valores">
+    <b class="w3-jumbo"><b>Valores</b></b>
+    <p class="w3-xlarge">En nuestro entorno, cultivamos e insentivamos los valores.</p>
 
     <div class="w3-row" style="margin-top:64px">
         <div class="w3-col s3">
             <i class="fa fa-bolt w3-text-orange w3-jumbo"></i>
-            <p>EXCELENCIA</p>
+            <p> <b>EXCELENCIA</b></p>
         </div>
         <div class="w3-col s3">
             <i class="fa fa-heart w3-text-red w3-jumbo"></i>
-            <p>SOLIDARIDAD</p>
+            <p> <b>SOLIDARIDAD</b></p>
         </div>
         <div class="w3-col s3">
             <i class="fa fa-handshake-o w3-text-yellow w3-jumbo"></i>
-            <p>COMPROMISO</p>
+            <p> <b>COMPROMISO</b></p>
         </div>
         <div class="w3-col s3">
             <i class="fa fa-child w3-text-green w3-jumbo"></i>
-            <p>GRATITUD </p>
+            <p> <b>GRATITUD </b></p>
         </div>
     </div>
 </div>
 
 
 <!-- Staff Section -->
-<div class="w3-container" style="padding:128px 16px" id="staff">
+<div class="w3-container w3-dark-grey" style="padding:128px 16px" id="staff">
     <h3 class="w3-center w3-jumbo">Staff</h3>
     <!--<p class="w3-center w3-large">Coordinadores de Proyecto Global</p>-->
 
@@ -191,6 +196,7 @@
                     <p class="w3-large">
                         Psicóloga<br>
                         Terapeuta Psicosocial<br>
+                        Teólogo<br>
                         Docente Universitaria<br>
                         Líder Chapel Navegantes del Magallanes (LBPV)<br>
                         Miembro del Equipo Pastoral IB MUF Valencia
@@ -221,44 +227,156 @@
             <p class="w3-large">
                 Ambos suman más de 25 años de experiencia de trabajo con los niños y los jóvenes en diferentes espacios, entre ellos los últimos años en los campus universitarios en Venezuela. Han participado en múltiples conferencias, congresos, talleres y charlas compartiendo experiencia y enseñanzas en medio de las nuevas generaciones.
             </p>
+            <p class="w3-large">
+                Entrenamiento, charlas, talleres, asesoramiento, conferencias y acompañamiento integral a ministerios y organizaciones. (Liderazgo, Coaching, Psicología, Terapia Psicosocial) 
+            </p>
         </div>
         
     </div>
 </div>
 
 
-<!-- Contact Container -->
-<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
-  <div class="w3-row">
-    <div class="w3-col m5">
-    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contacto</span></div>
-      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>Valencia, Venezuela</p>
-      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i> +58 414 4371968</p>
-      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i> mufvalencia@gmail.com</p>
-      <p><i class="fa fa-facebook w3-text-teal w3-xlarge"></i> Misión Última Frontera Valencia</p>
-      <p><i class="fa fa-instagram w3-text-teal w3-xlarge"></i> @mufvalencia</p>
+
+<!-- Project Section -->
+<div class="w3-container w3-white" id="campus_accion">
+    <h3 class="w3-row w3-center w3-jumbo">Campus de Acción<br><i class="w3-text-blue">Esfera Educación</i></h3>
+    
+    <div class="w3-row w3-row-padding w3-center w3-text-red">
+        <div class="w3-col l2 m6 w3-margin-bottom" style="width: 20%">
+            <div class="w3-display-container w3-padding w3-xlarge nombre_casa_estudio">
+                Universidad De Carabobo
+            </div>
+        </div>
+
+        <div class="w3-col l2 m6 w3-margin-bottom" style="width: 20%">
+            <div class="w3-display-container w3-padding w3-xlarge nombre_casa_estudio">
+                Universidad José Antonio Páez
+            </div>
+        </div>
+
+        <div class="w3-col l2 m6 w3-margin-bottom" style="width: 20%">
+            <div class="w3-display-container w3-padding w3-xlarge nombre_casa_estudio">
+                Universidad Arturo Michelena
+            </div>
+        </div>
+
+        <div class="w3-col l2 m6 w3-margin-bottom" style="width: 20%">
+            <div class="w3-display-container w3-padding w3-xlarge nombre_casa_estudio">
+                Universidad Alejandro De Humboldt
+            </div>
+        </div>
+
+        <div class="w3-col l2 m6 w3-margin-bottom" style="width: 20%">
+            <div class="w3-display-container w3-padding w3-xlarge nombre_casa_estudio">
+                Universidad Tecnológica Del Centro
+            </div>
+        </div>
     </div>
-    <div class="w3-col m7">
-      <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
-      <div class="w3-section">      
-        <label>Name</label>
-        <input class="w3-input" type="text" name="Name" required>
-      </div>
-      <div class="w3-section">      
-        <label>Email</label>
-        <input class="w3-input" type="text" name="Email" required>
-      </div>
-      <div class="w3-section">      
-        <label>Message</label>
-        <input class="w3-input" type="text" name="Message" required>
-      </div>  
-      <input class="w3-check" type="checkbox" checked name="Like">
-      <label>I Like it!</label>
-      <button type="submit" class="w3-button w3-right w3-theme">Send</button>
-      </form>
+
+    <div class="w3-row w3-row-padding w3-center w3-text-green">
+        <div class="w3-col l3 m6 w3-margin-bottom">
+            <div class="w3-display-container w3-padding w3-xlarge nombre_casa_estudio">
+                Instituto Universitario De Tecnología De Administración Industrial
+            </div>
+        </div>
+
+        <div class="w3-col l3 m6 w3-margin-bottom">
+            <div class="w3-display-container w3-padding w3-xlarge nombre_casa_estudio">
+                Instituto Universitario De Nuevas Profesiones
+            </div>
+        </div>
+
+        <div class="w3-col l3 m6 w3-margin-bottom">
+            <div class="w3-display-container w3-padding w3-xlarge nombre_casa_estudio">
+                Instituto Universitario De Tecnología Antonio José De Sucre
+            </div>
+        </div>
+
+        <div class="w3-col l3 m6 w3-margin-bottom">
+            <div class="w3-display-container w3-padding w3-xlarge nombre_casa_estudio">
+                Instituto Universitario De Tecnología Juan Pablo Pérez Alfonzo
+            </div>
+        </div>
     </div>
-  </div>
-  <br>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26419.166210981297!2d-68.00438364898079!3d10.161742985473364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e80678bce61928f%3A0x9f78e9eea8c34272!2sValencia%2C%20Carabobo!5e0!3m2!1ses-419!2sve!4v1588049595013!5m2!1ses-419!2sve" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+    <div class="w3-row w3-row-padding w3-center w3-text-blue">
+        <div class="w3-col l2 m6 w3-margin-bottom" style="width: 20%">
+            <div class="w3-display-container w3-padding w3-xlarge nombre_casa_estudio">
+                Colegio Universitario De Administración Y Mercadeo
+            </div>
+        </div>
+
+        <div class="w3-col l2 m6 w3-margin-bottom" style="width: 20%">
+            <div class="w3-display-container w3-padding w3-xlarge nombre_casa_estudio">
+                Colegio La Esperanza
+            </div>
+        </div>
+
+        <div class="w3-col l2 m6 w3-margin-bottom" style="width: 20%">
+            <div class="w3-display-container w3-padding w3-xlarge nombre_casa_estudio">
+                Colegio Los Pinos
+            </div>
+        </div>
+
+        <div class="w3-col l2 m6 w3-margin-bottom" style="width: 20%">
+            <div class="w3-display-container w3-padding w3-xlarge nombre_casa_estudio">
+                Unidad Educativa Batalla De Bomboná
+            </div>
+        </div>
+
+        <div class="w3-col l2 m6 w3-margin-bottom" style="width: 20%">
+            <div class="w3-display-container w3-padding w3-xlarge nombre_casa_estudio">
+                Unidad Educativa Lago De Maracaibo
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- script to change background to campus_seccion section-->
+<script>
+    let contenedor = document.getElementById("campus_accion");
+    let src_img = ['act_img1', 'act_img2', 'act_img3', 'act_img4', 'act_img5'];
+    foreach (img in src_img){
+        contenedor.style.background= src_img[img];
+    }
+</script>
+
+
+<!-- Container (Contact Section) -->
+<div class="w3-row w3-white" id="contact">
+    <div class="w3-content w3-container w3-padding-64" id="contact">
+    <h3 class="w3-center w3-jumbo">Desde Aquí Trabajamos</h3>
+    <p class="w3-center w3-xxlarge"><em>Información de contacto</em></p>
+
+    <div class="w3-row w3-padding-32 w3-section">
+        <div class="w3-col m4 w3-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26419.166210981297!2d-68.00438364898079!3d10.161742985473364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e80678bce61928f%3A0x9f78e9eea8c34272!2sValencia%2C%20Carabobo!5e0!3m2!1ses-419!2sve!4v1588049595013!5m2!1ses-419!2sve" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div class="w3-col m8 w3-panel w3-text-gray">
+        <div class="w3-xlarge w3-margin-bottom">
+            <i class="fa fa-map-marker w3-text-blue"></i>Valencia, Venezuela<br>
+            <i class="fa fa-phone w3-text-blue"></i> +58 414 4371968<br>
+            <i class="fa fa-envelope-o w3-text-blue"></i> mufvalencia@gmail.com<br>
+            <i class="fa fa-facebook w3-text-blue"></i> Misión Última Frontera Valencia<br>
+            <i class="fa fa-instagram w3-text-blue"></i> @mufvalencia<br>
+        </div>
+        <p class="w3-xlarge">Si gustas contactarte con nosotros, puedes enviarnos un mensaje a nuestro correo electronico o bien puedes escribirnos
+        por aquí: </p>
+        <form action="/action_page.php" target="_blank">
+            <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Nombre" required name="name">
+            </div>
+            <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Correo Electrónico" required name="email">
+            </div>
+            </div>
+            <input class="w3-input w3-border" type="text" placeholder="Mensaje" required name="msj">
+            <button class="w3-button w3-green w3-hover-text-green w3-right w3-section" type="submit">
+            <i class="fa fa-paper-plane"></i> Envíar Mensaje
+            </button>
+        </form>
+        </div>
+    </div>
 </div>
 {% endblock %}

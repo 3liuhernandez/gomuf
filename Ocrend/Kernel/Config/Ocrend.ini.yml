@@ -21,11 +21,10 @@ database:
       
 # Configuración de servidor SMTP
 mailer:
-  host: 
-  user: 
-  pass: 
+  host: smtp.gmail.com
+  user: gomuf.com@gmail.com
+  pass: 123456R*e
   port: 587
-  logo:
 
 # Configuración de twig
 twig:
