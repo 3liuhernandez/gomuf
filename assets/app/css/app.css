@@ -20,3 +20,53 @@
     height: 100%;
     background-color: rgba(0, 0, 0, .6);
 }
+.banner{
+    background-image: url('../img/logo.jpg');
+    background-size: 190px auto;
+    background-position: left;
+    background-position-y: 30px;
+    background-position-x: 20px;
+    /* background-position-x: 100%; */
+    background-repeat: no-repeat;
+}
+.bg-cover{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.black-background{
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 8px;
+    opacity: 0.80;
+    transition: all .3s;
+}
+
+.black-background:hover{
+    opacity: 1;
+}
+#nosotros{
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    min-height: 700px;
+}
+
+/* .bg-cover .w3-row-padding{
+    position: relative;
+    z-index: 1;
+}
+.bg-cover::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(241, 241, 241, 0.8);
+} */
+
+.nombre_casa_estudio{
+    font-weight: 600;
+    padding: 5% !important;
+}
