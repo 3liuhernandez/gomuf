@@ -17,3 +17,7 @@ setInterval(() => {
 }, 5000);
 
 
+$('a[data-item]').click(function (event){
+    alert("click");
+
+});
