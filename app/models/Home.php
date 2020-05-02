@@ -68,7 +68,7 @@ class Home extends Models implements IModels {
                 '.$msj;
 
             # Enviar email
-            $email_send = Helper\Emails::send(["gomuf.com@gmail.com" => "GOMUF"],array(
+            $email_send = Helper\Emails::send(["contacto.gomuf@gmail.com" => "GOMUF"],array(
                 # Título del mensaje
                 '{{title}}' => 'Mensaje de contacto - ' . $config['build']['name'],
                 # Url de logo
