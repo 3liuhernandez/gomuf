@@ -17,13 +17,14 @@ setInterval(() => {
 }, 5000);
 
 
+/* alianzas estrategicas */
 var alianzas_estrategica = document.getElementById('alianzas');
 var images_alianzas = [
-    'assets/app/img/alianzas_estrategicas/aalianza_img11.jpg',
-    'assets/app/img/alianzas_estrategicas/aalianza_img12.jpg',
-    'assets/app/img/alianzas_estrategicas/aalianza_img12_1.jpg',
-    'assets/app/img/alianzas_estrategicas/aalianza_img12_2.jpg',
-    'assets/app/img/alianzas_estrategicas/aalianza_img12_3.jpg'
+    'assets/app/img/alianzas_estrategicas/alianza_img1.jpg',
+    'assets/app/img/alianzas_estrategicas/alianza_img2.jpg',
+    'assets/app/img/alianzas_estrategicas/alianza_img2_1.jpg',
+    'assets/app/img/alianzas_estrategicas/alianza_img2_2.jpg',
+    'assets/app/img/alianzas_estrategicas/alianza_img2_3.jpg'
 ];
 
 var i = 0;
