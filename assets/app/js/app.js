@@ -17,7 +17,20 @@ setInterval(() => {
 }, 5000);
 
 
-$('a[data-item]').click(function (event){
-    alert("click");
+var alianzas_estrategica = document.getElementById('alianzas');
+var images_alianzas = [
+    'assets/app/img/alianzas_estrategicas/aalianza_img11.jpg',
+    'assets/app/img/alianzas_estrategicas/aalianza_img12.jpg',
+    'assets/app/img/alianzas_estrategicas/aalianza_img12_1.jpg',
+    'assets/app/img/alianzas_estrategicas/aalianza_img12_2.jpg',
+    'assets/app/img/alianzas_estrategicas/aalianza_img12_3.jpg'
+];
 
-});
+var i = 0;
+alianzas_estrategica.style.backgroundImage = "url('"+images_alianzas[i]+"')";
+
+setInterval(() => {
+    i++;
+    if(i > 4) i = 0;
+    alianzas_estrategica.style.backgroundImage = "url('"+images_alianzas[i]+"')";
+}, 5000);

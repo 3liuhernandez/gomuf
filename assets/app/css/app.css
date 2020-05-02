@@ -1,18 +1,21 @@
+a{
+    text-decoration: none;
+}
 .topnav{
     z-index:  1000;
 }
-#campus_accion{
+#campus_accion, #alianzas{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     transition: all .3s ease-in-out;
     position: relative;
 }
-#campus_accion .w3-jumbo{
+#campus_accion .w3-jumbo, #alianzas .w3-jumbo{
     position: relative;
     z-index: 1;
 }
-#campus_accion::before{
+#campus_accion::before, #alianzas::before{
     position: absolute;
     left: 0;
     top: 0;
