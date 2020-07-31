@@ -1,1 +1,8 @@
 /app/templates/.compiled/**/*.php
+.htaccess
+*.sql
+*.zip
+/respaldo/*.*
+/respaldo_252020704/*.*
+/Ocrend/vendor/*.*
+*.yml

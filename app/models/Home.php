@@ -120,6 +120,8 @@ class Home extends Models implements IModels {
                     'email' => $email,
                     'message' => $msj
                 ));
+            }else{
+                $this->db->query("UPDATE suscripcion SET download = download + 1 WHERE email = '$email' LIMIT 1");
             }
 
 
