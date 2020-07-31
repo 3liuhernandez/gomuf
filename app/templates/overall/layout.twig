@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head><meta charset="gb18030">
     {{ base_assets()|raw }}
     <title>{{ config.build.name }}</title>
-    <meta charset="UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/vendor/ladda/ladda.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -21,7 +21,40 @@
     </style>
 </head>
 <body class="w3-content w3-blue" style="max-width:1500px;">
+<!--
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1426788540826731',
+      cookie     : true,
+      xfbml      : true,
+      version    : 'v7.0'
+    });
+      
+    FB.AppEvents.logPageView();   
+    
+    FB.getLoginStatus(function(response) {
+        if (response.status === 'connected') {
+            console.log(response.authResponse.accessToken);
+        }
+    });
+    FB.api('/me', function(response) {
+        console.log(JSON.stringify(response));
+    });
+  };
 
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v7.0&appId=1426788540826731&autoLogAppEvents=1"></script>
+-->
 <!-- Navbar (sit on top) -->
 <div class="w3-top topnav">
     <div class="w3-bar w3-white w3-wide w3-padding w3-card">
@@ -44,7 +77,7 @@
 </header>
 
 
-{% include 'overall/header' %}
+{% include 'overall/banner_libro' %}
 
 
 {% block appBody %}{% endblock %}
@@ -52,6 +85,9 @@
 <!-- Footer -->
 <footer class="w3-container w3-padding-32 w3-light-grey w3-center w3-xlarge">
   <p class="w3-medium">Powered by <a href="https://www.facebook.com/darluz.mufvalencia" target="_blank" class="w3-hover-text-green">GoMuf Developers</a></p>
+  <!--
+  <div class="fb-login-button" data-size="large" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false" data-width=""></div>
+    -->
 </footer>
 
 <script>
