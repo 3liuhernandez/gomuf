@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 05-08-2020 a las 17:08:46
+-- Tiempo de generación: 05-08-2020 a las 21:12:52
 -- Versión del servidor: 10.4.11-MariaDB
 -- Versión de PHP: 7.3.18
 
@@ -38,9 +38,9 @@ CREATE TABLE `libros` (
 --
 
 INSERT INTO `libros` (`id_libro`, `nombre`, `directorio`) VALUES
-(1, 'Llamado misionero', 'LLAMADO MISIONERO A CYBERIA.pdf'),
-(2, 'Lo que aprendí en cuarentena', 'LO QUE APRENDI ESTA CUARENTENA.pdf'),
-(3, 'Post Covid-19', 'REENCUENTRO CON LAS NUEVAS GENERACIONES POST COVID 19.pdf');
+(1, 'Post Covid-19', 'REENCUENTRO CON LAS NUEVAS GENERACIONES POST COVID 19.pdf'),
+(2, 'Llamado misionero', 'LLAMADO MISIONERO A CYBERIA.pdf'),
+(3, 'Lo que aprendí en cuarentena', 'LO QUE APRENDI ESTA CUARENTENA.pdf');
 
 -- --------------------------------------------------------
 
@@ -64,7 +64,7 @@ CREATE TABLE `suscripcion` (
 INSERT INTO `suscripcion` (`id_suscriptor`, `id_libro`, `name`, `email`, `message`, `download`) VALUES
 (12, 1, 'josé', 'josesarriamuf@gmail.com', 'a leerlo!!!', 1),
 (13, 1, 'Marly Barrera', 'Marlyalebc@gmail.com', 'Que bueno es ver personas que son visionarios en el Señor :)', 1),
-(14, 1, 'Eliu Hernandez', '3liuhernandez@gmail.com', 'conocer y prepararme para esa nueva generacion', 1),
+(14, 1, 'Eliu Hernandez', '3liuhernandez@gmail.com', 'conocer y prepararme para esa nueva generacion', 4),
 (15, 1, 'Jesus ', 'Vasquez2008jesus@gmail.com', 'Profe  es el mejor', 1),
 (16, 1, 'David Silva', 'jassessilva@gmail.com', 'saludos, Dios les siga usando', 2),
 (17, 1, 'Eliezer', 'eliezerpinto100.com@gmail.com', 'Eee', 2),
@@ -294,8 +294,7 @@ INSERT INTO `suscripcion` (`id_suscriptor`, `id_libro`, `name`, `email`, `messag
 (241, 1, 'S. RUBEN FONTAO', 'pastorfontao@gmail.com', 'Tengo la expectativa de conocer con mayor profundida como utilizar este nuevo espacio de comunicación del evangelio de Jesucristo, especialmente desde la iglesia local. Actualmente sirvo como misionero en linea en GMO y veo el enorme campo de proclamación del evangelio de maneras diferentes a la que hasta ahora veniamos realizando. Bendiciones.\r\n', 1),
 (242, 1, 'Alberto Adipate', 'adipatealberto@gmail.com', 'Dios le bendiga a la nueva generación.', 1),
 (243, 1, 'Marlin chavez', 'Marlinyerlin28@gmail.com', 'Quiero aprender mas dek padre que me creo y ne hizo su hija.', 1),
-(244, 1, 'Lia', 'liasacb@gmail.com', 'Conocer el estudio y perspectiva que plantean ante esta situación y su efecto en los jóvenes. ', 1),
-(246, 1, 'prueba10', 'prueba10@gmail.com', 'prueba de descarga libro nuevo', 1);
+(244, 1, 'Lia', 'liasacb@gmail.com', 'Conocer el estudio y perspectiva que plantean ante esta situación y su efecto en los jóvenes. ', 1);
 
 -- --------------------------------------------------------
 
@@ -343,13 +342,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT de la tabla `libros`
 --
 ALTER TABLE `libros`
-  MODIFY `id_libro` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_libro` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de la tabla `suscripcion`
 --
 ALTER TABLE `suscripcion`
-  MODIFY `id_suscriptor` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=249;
+  MODIFY `id_suscriptor` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=255;
 
 --
 -- AUTO_INCREMENT de la tabla `users`
