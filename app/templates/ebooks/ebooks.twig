@@ -280,44 +280,41 @@
 {% block appFooter %}
 <script src="assets/jscontrollers/home/actions.js"></script>
 <script>
-        function descargar_ebook(ebook){
-            modal = document.getElementById('download_ebook');
-            titutlo_modal = document.getElementById('titulo_ebook');
-            img = document.getElementById('imagen_ebook');
-            input_ebook = document.getElementById('input_ebook');
+    function descargar_ebook(ebook){
+        modal = document.getElementById('download_ebook');
+        titutlo_modal = document.getElementById('titulo_ebook');
+        img = document.getElementById('imagen_ebook');
+        input_ebook = document.getElementById('input_ebook');
 
-            switch (ebook) {
-                case '1':
-                    url_pdf = "assets/app/doc/REENCUENTRO CON LAS NUEVAS GENERACIONES POST COVID 19.pdf";
-                    src_img = "assets/app/img/libros/mini_llamado_misionero_ciberia.jpg";
-                    titulo = "Llamado Misionero a Cyberia";
-                    break;
+        switch (ebook) {
+            case '1':
+                url_pdf = "assets/app/doc/LLAMADO MISIONERO A CYBERIA.pdf";
+                src_img = "assets/app/img/libros/mini_llamado_misionero_ciberia.jpg";
+                titulo = "Llamado Misionero a Cyberia";
+                break;
 
-                case '2':
-                    url_pdf = "assets/app/doc/REENCUENTRO CON LAS NUEVAS GENERACIONES POST COVID 19.pdf";
-                    src_img = "assets/app/img/libros/mini_lo_que_aprendi_esta_cuarentena.jpg";
-                    titulo = "“LO QUE APRENDÍ EN ESTA CUARENTENA”";
-                    break;
+            case '2':
+                url_pdf = "assets/app/doc/LO QUE APRENDI ESTA CUARENTENA.pdf";
+                src_img = "assets/app/img/libros/mini_lo_que_aprendi_esta_cuarentena.jpg";
+                titulo = "“LO QUE APRENDÍ EN ESTA CUARENTENA”";
+                break;
 
-                case '3':
-                    url_pdf = "assets/app/doc/REENCUENTRO CON LAS NUEVAS GENERACIONES POST COVID 19.pdf";
-                    src_img = "assets/app/img/libros/libro_mini.jpeg";
-                    titulo = "REENCUENTRO CON LAS NUEVAS GENERACIONES POST COVID-19";
-                    break;
+            case '3':
+                url_pdf = "assets/app/doc/REENCUENTRO CON LAS NUEVAS GENERACIONES POST COVID 19.pdf";
+                src_img = "assets/app/img/libros/libro_mini.jpeg";
+                titulo = "REENCUENTRO CON LAS NUEVAS GENERACIONES POST COVID-19";
+                break;
 
-                default:
-                    alert('default');
-                    break;
-            }
-
-            titutlo_modal.innerHTML = titulo;
-            img.src = src_img;
-            input_ebook.value = ebook;
-            modal.style.display="block";
-            document.getElementById('book_type').value = ebook;
-
-
-
+            default:
+                alert('default');
+                break;
         }
-    </script>
+
+        titutlo_modal.innerHTML = titulo;
+        img.src = src_img;
+        input_ebook.value = ebook;
+        modal.style.display="block";
+        document.getElementById('book_type').value = ebook;
+    }
+</script>
 {% endblock %}
