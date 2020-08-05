@@ -1,0 +1,145 @@
+<style>
+.banner-image1 {
+    background-image: url("assets/app/img/libros/llamado_misionero_ciberia.jpg");
+    background-position: center;
+}
+
+.banner-image2 {
+    background-image: url("assets/app/img/libros/lo_que_aprendi_esta_cuarentena.jpg");
+    background-position: center;
+}
+
+.banner-image3 {
+    background-image: url("assets/app/img/libros/libro.jpg");
+    background-position: center;
+}
+
+.banner-image4 {
+    background-image: url("assets/app/img/banners/bunker_logo.jpg");
+    background-position: bottom;
+}
+
+.banner-image {
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+
+    /* Full height */
+    height: 800px;
+
+    /* Center and scale the image nicely */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.banner-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+</style>
+
+<style>
+    .banner_slides:hover{
+        cursor: pointer;
+    }
+</style>
+
+<div class="w3-container w3-display-container w3-padding-large w3-white">
+
+    <div class="banner_slides" onclick="banner_enlace('ebooks/#cyberia');">
+        <div class="banner-image banner-image1"></div>
+        <div class="banner-text">
+            <b class="w3-xxlarge w3-green">Proyecto E-Book</b><br>
+            <b class="w3-jumbo">Llamado Misionero A Cyberia</b>
+            <p class="w3-xxlarge">Dario Ortega</p>
+        </div>
+    </div>
+
+    <div class="banner_slides" onclick="banner_enlace('ebooks/#cuarentena');">
+        <div class="banner-image banner-image2"></div>
+        <div class="banner-text">
+            <b class="w3-xxlarge w3-red">Proyecto E-Book</b><br>
+            <b class="w3-jumbo">Lo Que Aprendí En Esta Cuarentena</b>
+            <p class="w3-xxlarge">Varios Autores</p>
+        </div>
+    </div>
+
+    <div class="banner_slides" onclick="banner_enlace('ebooks/#post-covid');">
+        <div class="banner-image banner-image3"></div>
+        <div class="banner-text">
+            <b class="w3-xxlarge w3-blue">Proyecto E-Book</b><br>
+            <b class="w3-jumbo">Reencuentro con <br>las Nuevas Generaciones <br>Post Covid 19</b>
+            <p class="w3-xxlarge">Dario Ortega</p>
+        </div>
+    </div>
+
+    <div class="banner_slides" onclick="banner_enlace('bunker');">
+        <div class="banner-image banner-image4"></div>
+        <div class="banner-text">
+            <b class="w3-xxlarge w3-green">PODCAST | Live Stream</b><br>
+            <b class="w3-jumbo w3-block w3-center">Bunker</b>
+            <span class="w3-xxxlarge w3-center"> Martes y Miércoles <br> 09:00 PM </span>
+            <br>
+            <span class="w3-xlarge w3-center">
+                <i class="w3-badge w3-padding fa fa-facebook w3-blue"></i>
+                Misión Última Frontera Valencia
+            </span>
+            <br>
+            <p class="w3-xxlarge w3-block w3-hide">Dario Ortega</p>
+        </div>
+    </div>
+
+    <div class="w3-row-padding w3-padding w3-center">
+        <button class="w3-button" onclick="myShow.previous()"><b>Anterior</b></button>
+        <button class="w3-button" onclick="myShow.next()"><b>Siguiente</b></button>
+    </div>
+</div>
+
+{% block appFooter %}
+    <script src="assets/app/js/w3.js"></script>
+{% endblock %}
+
+<script>
+    w3.slideshow(".banner_slides", 7000);
+    myShow = w3.slideshow(".banner_slides", 7000);
+</script>
+
+<script>
+    function banner_enlace(enlace) {
+        /*window.location.replace("http://www.facebook.com");*/
+        switch(enlace){
+            case 'ebooks/#cyberia':
+                window.location.replace(enlace);
+                break;
+
+            case 'ebooks/#cuarentena':
+                window.location.replace(enlace);
+                break;
+
+            case 'ebooks/#post-covid':
+                window.location.replace(enlace);
+                break;
+
+            case 'bunker':
+                window.open("https://www.facebook.com/mufvalencia.ortegaalbornoz/");
+                break;
+
+            default:
+                alert(enlace);
+                window.location.replace('/');
+                break;
+        }
+    }
+</script>

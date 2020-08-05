@@ -4,6 +4,9 @@ a{
 .topnav{
     z-index:  1000;
 }
+.topnav a:hover{
+    font-weight: bold;
+}
 #campus_accion, #alianzas{
     background-size: cover;
     background-repeat: no-repeat;
@@ -38,15 +41,23 @@ a{
     background-position: center;
     position: relative;
 }
-.black-background{
-    background-color: #f1f1f1;
+
+.color-background{
     padding: 10px;
     border-radius: 8px;
     opacity: 0.75;
     transition: all .3s;
 }
 
-.black-background:hover{
+.black-background{
+    background-color: #f1f1f1;
+}
+
+.gray-background{
+    background-color: #f1f1f185 ;
+}
+
+.color-background:hover{
     opacity: 1;
 }
 #nosotros{
