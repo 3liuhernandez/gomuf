@@ -6,12 +6,10 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/vendor/ladda/ladda.min.css">
-    <link rel="stylesheet" href="assets/app/css/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- TO DO: -->
-    <!--<link rel="stylesheet" href="assets/app/css/font-awesome.min.css">-->
-    <link rel="stylesheet" href="assets/app/css/w3-theme-black.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
     <link rel="stylesheet" href="assets/vendor/toastr/build/toastr.min.css">
     <link rel="stylesheet" href="assets/app/css/app.css">
     <link rel="stylesheet" href="assets/app/css/w3-win8-color.css">
@@ -19,36 +17,34 @@
     <style>
         body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
         body {font-size: 16px;}
+        img {margin-bottom: -8px;}
+        .mySlides {display: none;}
     </style>
 </head>
 <body class="w3-content w3-blue" style="max-width:1500px;">
+
 <!-- Navbar (sit on top) -->
 <div class="w3-top topnav">
     <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-        <a href="home" class="w3-bar-item w3-button"><b>GOMUF</b></a>
-        <!-- Float links to the right. Hide them on small screens -->
+        <a href="home" class="w3-bar-item w3-button"><b> <i class="fa fa-home"></i> GOMUF</b></a>
         <div class="w3-right w3-hide-small w3-text-blue">
             <a href="ebooks/" class="w3-bar-item w3-button w3-hover-none" data-item="nosotros">Proyecto E-book</a>
             <a href="bombona/" class="w3-bar-item w3-button w3-hover-none" data-item="valores">Niños Bomboná</a>
         </div>
+
+        <!-- Float links to the right. Hide them on small screens -->
         <div class="w3-left w3-hide-small w3-block">
-            <a href="#nosotros" class="w3-bar-item w3-button w3-hover-none w3-hover-text-indigo" data-item="nosotros">Nosotros</a>
-            <a href="#valores" class="w3-bar-item w3-button w3-hover-none w3-hover-text-indigo" data-item="valores">Valores</a>
-            <a href="#staff" class="w3-bar-item w3-button w3-hover-none w3-hover-text-indigo" data-item="staff">Staff</a>
-            <a href="#campus_accion" class="w3-bar-item w3-button w3-hover-none w3-hover-text-indigo" data-item="campus_accion">Campus de Acción</a>
-            <a href="#alianzas" class="w3-bar-item w3-button w3-hover-none w3-hover-text-indigo" data-item="staff">Alianzas</a>
-            <a href="#contact" class="w3-bar-item w3-button w3-hover-none w3-hover-text-indigo" data-item="contact">Contacto</a>
+            <a href="ebooks/#cyberia" class="w3-bar-item w3-button w3-hover-none" data-item="cyberia">Misiones en Cyberia</a>
+            <a href="ebooks/#cuarentena" class="w3-bar-item w3-button w3-hover-none" data-item="cuarentena">En Cuarentena</a>
+            <a href="ebooks/#post-covid" class="w3-bar-item w3-button w3-hover-none" data-item="covid">Post Covid 19</a>
         </div>
     </div>
 </div>
 
 <header class="w3-container banner w3-center w3-padding-32 w3-white" style="margin-top: 5%">
-    <h1 class="w3-jumbo"><b>Proyecto Global</b></h1>
-    <h3 class="w3-xxlarge"><b><i>Metamorfosis Universitaria Fraternity</i></b></h3>
+    <h1 class="w3-jumbo"><b class="w3-text-blue">Proyecto Niños Bomboná</b></h1>
+    <hr style="width: 50%; margin: 1% auto; color: blue">
 </header>
-
-
-{% include 'overall/banner' %}
 
 
 {% block appBody %}{% endblock %}
@@ -66,8 +62,7 @@
 <script src="assets/vendor/ladda/ladda.min.js"></script>
 <script src="assets/vendor/toastr/build/toastr.min.js"></script>
 <script src="assets/jscontrollers/overall/toast.js"></script>
-<script src="assets/app/js/app.js"></script>
-
+<!--<script src="assets/app/js/app.js"></script>-->
 {% block appFooter %}{% endblock %}
 </body>
 </html>
