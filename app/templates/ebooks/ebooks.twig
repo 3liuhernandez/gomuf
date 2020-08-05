@@ -51,7 +51,7 @@
                     </button>
                 </div>
             </div>
-            <button class="w3-button w3-padding-large w3-section w3-hide-small" onclick="descargar_ebook('llamado_misionero');">
+            <button class="w3-button w3-padding-large w3-section w3-hide-small" onclick="descargar_ebook('1');">
                 <i class="fa fa-download"></i> Adquiere una copia del libro.
             </button>
         </div>
@@ -115,7 +115,7 @@
                     </button>
                 </div>
             </div>
-            <button class="w3-button w3-padding-large w3-section w3-hide-small" onclick="descargar_ebook('en_cuarentena');">
+            <button class="w3-button w3-padding-large w3-section w3-hide-small" onclick="descargar_ebook('2');">
                 <i class="fa fa-download"></i> Adquiere una copia del libro.
             </button>
         </div>
@@ -184,7 +184,7 @@
                     </button>
                 </div>
             </div>
-            <button class="w3-button w3-padding-large w3-section w3-hide-small" onclick="descargar_ebook('post_covid-19');">
+            <button class="w3-button w3-padding-large w3-section w3-hide-small" onclick="descargar_ebook('3');">
                 <i class="fa fa-download"></i> Adquiere una copia del libro.
             </button>
         </div>
@@ -262,6 +262,7 @@
                         </div>
                     </div>
                     <textarea col="5" row="5" class="w3-input w3-border" placeholder="Mensaje" required name="msj"></textarea>
+                    <input type="hidden" name="book_type" id="book_type" value>
                     <hr>
                     <button id="download_btn" type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Descargar E-Book</button>
                 </form>
@@ -273,9 +274,12 @@
             </div>
         </div>
     </div>
+    
+{% endblock %}
 
-
-    <script>
+{% block appFooter %}
+<script src="assets/jscontrollers/home/actions.js"></script>
+<script>
         function descargar_ebook(ebook){
             modal = document.getElementById('download_ebook');
             titutlo_modal = document.getElementById('titulo_ebook');
@@ -283,19 +287,19 @@
             input_ebook = document.getElementById('input_ebook');
 
             switch (ebook) {
-                case 'llamado_misionero':
+                case '1':
                     url_pdf = "assets/app/doc/REENCUENTRO CON LAS NUEVAS GENERACIONES POST COVID 19.pdf";
                     src_img = "assets/app/img/libros/mini_llamado_misionero_ciberia.jpg";
                     titulo = "Llamado Misionero a Cyberia";
                     break;
 
-                case 'en_cuarentena':
+                case '2':
                     url_pdf = "assets/app/doc/REENCUENTRO CON LAS NUEVAS GENERACIONES POST COVID 19.pdf";
                     src_img = "assets/app/img/libros/mini_lo_que_aprendi_esta_cuarentena.jpg";
                     titulo = "“LO QUE APRENDÍ EN ESTA CUARENTENA”";
                     break;
 
-                case 'post_covid-19':
+                case '3':
                     url_pdf = "assets/app/doc/REENCUENTRO CON LAS NUEVAS GENERACIONES POST COVID 19.pdf";
                     src_img = "assets/app/img/libro_mini.jpg";
                     titulo = "REENCUENTRO CON LAS NUEVAS GENERACIONES POST COVID-19";
@@ -310,6 +314,9 @@
             img.src = src_img;
             input_ebook.value = ebook;
             modal.style.display="block";
+            document.getElementById('book_type').value = ebook;
+
+
 
         }
     </script>
