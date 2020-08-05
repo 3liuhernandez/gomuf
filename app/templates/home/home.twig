@@ -5,11 +5,218 @@
     #proyectos a b:hover a {
         box-shadow: 5px 5px 5px red;
     }
+
+    #news{
+
+    }
 </style>
-<!-- Proyecto E-Book Section -->
+
+<!-- news -->
+<div class="w3-section w3-container w3-green" id="news">
+    <p class="w3-xxxlarge w3-center">¡Buenas Nuevas!</p>
+    <div class="w3-row w3-section w3-container">
+        <div class="w3-col l6 m6 s12">
+            <p class="w3-xlarge">
+                <b>Casa MUF para los niños</b><br>
+                En medio de las circunstancias actualesm hemos visto la provición de Dios para la remodelacion de casa para los niños de la comunidad.
+                <br><br>
+                <b class="w3-margin">Dios provee para su obra!</b>
+                <br><br>
+                Si quieres unirte a lo que Dios está haciendo contáctanos con nosotros.
+                <br><br>
+                #MUF2020
+                #Metamorfosisinfantil
+            </p>
+        </div>
+
+        <div class="w3-col l6 m6 s12" id="news_galeria">
+            <img src="assets/app/img/news/casa1.png" onclick="openModal();currentImgNews(1)" class="hover-shadow cursor" width="200">
+
+            <img src="assets/app/img/news/casa2.png" onclick="openModal();currentImgNews(2)" class="hover-shadow cursor" width="200">
+
+            <img src="assets/app/img/news/casa3.png" onclick="openModal();currentImgNews(3)" class="hover-shadow cursor" width="200">
+
+            <img src="assets/app/img/news/casa4.png" onclick="openModal();currentImgNews(4)" class="hover-shadow cursor" width="200">
+        </div>
+    </div>
+</div>
+
+
+<style>
+#news_galeria:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.newsMySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* The Modal (background) */
+.newsModal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+/* Modal Content */
+.news-modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* The Close Button */
+#newsMyModal .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#newsMyModal .close:hover,
+#newsMyModal .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+#newsMyModal .prev,
+#newsMyModal .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+#newsMyModal .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+#newsMyModal .prev:hover,
+#newsMyModal .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+#news_galeria img {
+    margin-bottom: -4px;
+}
+
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+#news_galeria img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+</style>
+
+<div id="newsMyModal" class="newsModal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="news-modal-content">
+
+        <div class="newsMySlides">
+            <div class="numbertext">1 / 4</div>
+            <img src="img_nature_wide.jpg" style="width:100%">
+        </div>
+
+        <div class="newsMySlides">
+            <div class="numbertext">2 / 4</div>
+            <img src="img_snow_wide.jpg" style="width:100%">
+        </div>
+
+        <div class="newsMySlides">
+            <div class="numbertext">3 / 4</div>
+            <img src="img_mountains_wide.jpg" style="width:100%">
+        </div>
+
+        <div class="newsMySlides">
+            <div class="numbertext">4 / 4</div>
+            <img src="img_lights_wide.jpg" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+
+
+        <div class="column">
+            <img class="demo cursor" src="img_nature_wide.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+        </div>
+
+        <div class="column">
+            <img class="demo cursor" src="img_snow_wide.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+        </div>
+
+        <div class="column">
+            <img class="demo cursor" src="img_mountains_wide.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+        </div>
+
+        <div class="column">
+            <img class="demo cursor" src="img_lights_wide.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+        </div>
+
+    </div>
+</div>
+
+
+<!-- Proyectos Section -->
 <div class="w3-padding w3-light-grey w3-center w3-container" id="proyectos">
     <div class="w3-padding-64 w3-container w3-section">
-        <strong class="w3-jumbo w3-text-amber" style="text-shadow:2px 1px 0 black">GoMUF está trabajando en otros materiales y recursos útiles para todos!</strong>
+        <strong class="w3-jumbo w3-text-amber" style="text-shadow:2px 1px 0 black">
+            ¡GoMUF está trabajando en otros materiales y recursos útiles para todos!
+        </strong>
     </div>
     <div class="w3-row">
         <div class="w3-container w3-section w3-col lg-4 m4 s6">
@@ -165,47 +372,48 @@
     </div>
 
     <div class="w3-row-padding w3-grayscale">
-        <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-col l1 w3-margin-bottom"></div>
+
+        <div class="w3-col l2 m4 s12 w3-margin-bottom">
             <div class="w3-container w3-center">
                 <p class="w3-xlarge">Jesús Izaguirre</p>
-                <img src="assets/app/img/team/jesus.jpg" alt="Jesús Ernesto Izaguirre"  class="w3-image w3-round">
+                <img src="assets/app/img/team/jesus.jpg" alt="Jesús Ernesto Izaguirre"  class="w3-image w3-round" width="350" height="500">
                 <p class="w3-large w3-opacity">Coordinador de Proyecto <br> MUF - UJAP</p>
             </div>
         </div>
 
-        <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-col l2 m4 s12 w3-margin-bottom">
             <div class="w3-container w3-center">
                 <p class="w3-xlarge">Clarismar de Sarría</p>
-                <img src="assets/app/img/team/clarismar.jpg" alt="Clarismar de Sarría"  class="w3-image w3-round">
-                <p class="w3-large w3-opacity">Equipo Pastoral MUF <br> Naguanagua - Venezuela</p>
+                <img src="assets/app/img/team/clarismar.jpg" alt="Clarismar de Sarría"  class="w3-image w3-round" width="350" height="500">
+                <p class="w3-large w3-opacity">Equipo <br>Pastoral MUF <br> Naguanagua - Venezuela</p>
             </div>
         </div>
 
-        <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-col l2 m4 s12 w3-margin-bottom">
             <div class="w3-container w3-center">
                 <p class="w3-xlarge">Leonardo Sarría</p>
-                <img src="assets/app/img/team/leonardo.jpg" alt="Leonardo Sarría"  class="w3-image w3-round">
-                <p class="w3-large w3-opacity">Pastor Equipo MUF <br> Naguanagua - Venezuela</p>
+                <img src="assets/app/img/team/leonardo.jpg" alt="Leonardo Sarría"  class="w3-image w3-round" width="350" height="500">
+                <p class="w3-large w3-opacity">Equipo <br>Pastoral MUF <br> Naguanagua - Venezuela</p>
             </div>
         </div>
 
-        <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-col l2 m4 s12 w3-margin-bottom">
             <div class="w3-container w3-center">
                 <p class="w3-xlarge">Natalia Montoya</p>
-                <img src="assets/app/img/team/natalia.jpg" alt="Natalia Montoya"  class="w3-image w3-round">
+                <img src="assets/app/img/team/natalia.jpg" alt="Natalia Montoya"  class="w3-image w3-round" width="350" height="500">
                 <p class="w3-large w3-opacity">Saint-Martin <br> Coordinadora Logística Internacional</p>
             </div>
         </div>
-    </div>
 
-    <div class="w3-row-padding w3-grayscale">
-        <div class="w3-col l3 m6 w3-margin-bottom w3-center" style="margin: 0 auto; float: none">
-            <div class="w3-container">
+        <div class="w3-col l2 m4 s12 w3-margin-bottom">
+            <div class="w3-container w3-center">
                 <p class="w3-xlarge">Sylvania Vasquez</p>
-                <img src="assets/app/img/team/sylvania.jpg" alt="Sylvania Vasquez Covault "  class="w3-image w3-round">
+                <img src="assets/app/img/team/sylvania.jpg" alt="Sylvania Vasquez Covault"  class="w3-image w3-round" width="350" height="500">
                 <p class="w3-large w3-opacity">Coordinadora Logística Proyectos</p>
             </div>
         </div>
+
     </div>
 
 </div>
