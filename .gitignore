@@ -1,6 +1,3 @@
 /app/templates/.compiled/**/*.php
-*.sql
 *.zip
-/respaldo/*.*
-/respaldo_252020704/*.*
 *.yml
