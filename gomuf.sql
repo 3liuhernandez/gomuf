@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.2
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 05-08-2020 a las 08:05:36
+-- Tiempo de generación: 05-08-2020 a las 17:08:46
 -- Versión del servidor: 10.4.11-MariaDB
--- Versión de PHP: 7.4.1
+-- Versión de PHP: 7.3.18
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -39,8 +38,8 @@ CREATE TABLE `libros` (
 --
 
 INSERT INTO `libros` (`id_libro`, `nombre`, `directorio`) VALUES
-(1, 'Llamado misionero', 'REENCUENTRO CON LAS NUEVAS GENERACIONES POST COVID 19.pdf'),
-(2, 'Lo que aprendí en cuarentena', 'REENCUENTRO CON LAS NUEVAS GENERACIONES POST COVID 19.pdf'),
+(1, 'Llamado misionero', 'LLAMADO MISIONERO A CYBERIA.pdf'),
+(2, 'Lo que aprendí en cuarentena', 'LO QUE APRENDI ESTA CUARENTENA.pdf'),
 (3, 'Post Covid-19', 'REENCUENTRO CON LAS NUEVAS GENERACIONES POST COVID 19.pdf');
 
 -- --------------------------------------------------------
@@ -296,7 +295,7 @@ INSERT INTO `suscripcion` (`id_suscriptor`, `id_libro`, `name`, `email`, `messag
 (242, 1, 'Alberto Adipate', 'adipatealberto@gmail.com', 'Dios le bendiga a la nueva generación.', 1),
 (243, 1, 'Marlin chavez', 'Marlinyerlin28@gmail.com', 'Quiero aprender mas dek padre que me creo y ne hizo su hija.', 1),
 (244, 1, 'Lia', 'liasacb@gmail.com', 'Conocer el estudio y perspectiva que plantean ante esta situación y su efecto en los jóvenes. ', 1),
-(245, 2, 'Armando', 'armandojamaya27@gmail.com', 'sdsada', 1);
+(246, 1, 'prueba10', 'prueba10@gmail.com', 'prueba de descarga libro nuevo', 1);
 
 -- --------------------------------------------------------
 
@@ -350,7 +349,7 @@ ALTER TABLE `libros`
 -- AUTO_INCREMENT de la tabla `suscripcion`
 --
 ALTER TABLE `suscripcion`
-  MODIFY `id_suscriptor` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=246;
+  MODIFY `id_suscriptor` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=249;
 
 --
 -- AUTO_INCREMENT de la tabla `users`
