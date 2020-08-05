@@ -51,7 +51,7 @@
                     </button>
                 </div>
             </div>
-            <button class="w3-button w3-padding-large w3-section w3-hide-small" onclick="descargar_ebook('1');">
+            <button class="w3-button w3-padding-large w3-section w3-hide-small" onclick="descargar_ebook('2');">
                 <i class="fa fa-download"></i> Adquiere una copia del libro.
             </button>
         </div>
@@ -115,7 +115,7 @@
                     </button>
                 </div>
             </div>
-            <button class="w3-button w3-padding-large w3-section w3-hide-small" onclick="descargar_ebook('2');">
+            <button class="w3-button w3-padding-large w3-section w3-hide-small" onclick="descargar_ebook('3');">
                 <i class="fa fa-download"></i> Adquiere una copia del libro.
             </button>
         </div>
@@ -185,7 +185,7 @@
                     </button>
                 </div>
             </div>
-            <button class="w3-button w3-padding-large w3-section w3-hide-small" onclick="descargar_ebook('3');">
+            <button class="w3-button w3-padding-large w3-section w3-hide-small" onclick="descargar_ebook('1');">
                 <i class="fa fa-download"></i> Adquiere una copia del libro.
             </button>
         </div>
@@ -268,7 +268,7 @@
                 <div class="w3-container w3-rest">
                     <i onclick="document.getElementById('download_ebook').style.display='none'" class="fa fa-remove w3-xlarge w3-button w3-text-red w3-right w3-hover-text-green w3-hover-white"></i>
                     <br><br><br>
-                    <img class="w3-image w3-right w3-hide-small" width="335" height="500" id="imagen_ebook">
+                    <img class="w3-image w3-right w3-hide-small" width="335" height="500" id="imagen_ebook" />
                 </div>
             </div>
         </div>
@@ -287,21 +287,21 @@
 
         switch (ebook) {
             case '1':
+                url_pdf = "assets/app/doc/REENCUENTRO CON LAS NUEVAS GENERACIONES POST COVID 19.pdf";
+                src_img = "assets/app/img/libros/libro_mini.jpeg";
+                titulo = "REENCUENTRO CON LAS NUEVAS GENERACIONES POST COVID-19";
+                break;
+
+            case '2':
                 url_pdf = "assets/app/doc/LLAMADO MISIONERO A CYBERIA.pdf";
                 src_img = "assets/app/img/libros/mini_llamado_misionero_ciberia.jpg";
                 titulo = "Llamado Misionero a Cyberia";
                 break;
 
-            case '2':
+            case '3':
                 url_pdf = "assets/app/doc/LO QUE APRENDI ESTA CUARENTENA.pdf";
                 src_img = "assets/app/img/libros/mini_lo_que_aprendi_esta_cuarentena.jpg";
                 titulo = "“LO QUE APRENDÍ EN ESTA CUARENTENA”";
-                break;
-
-            case '3':
-                url_pdf = "assets/app/doc/REENCUENTRO CON LAS NUEVAS GENERACIONES POST COVID 19.pdf";
-                src_img = "assets/app/img/libros/libro_mini.jpeg";
-                titulo = "REENCUENTRO CON LAS NUEVAS GENERACIONES POST COVID-19";
                 break;
 
             default:
