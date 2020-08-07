@@ -13,6 +13,8 @@ a{
     background-position: center;
     transition: all .3s ease-in-out;
     position: relative;
+
+    margin: auto 0px !important;
 }
 #campus_accion .w3-jumbo, #alianzas .w3-jumbo{
     position: relative;
@@ -26,7 +28,7 @@ a{
     height: 100%;
     background-color: rgba(0, 0, 0, .6);
 }
-.banner{
+.logo-header{
     background-image: url('../img/logo.jpg');
     background-size: 190px auto;
     background-position: left;
@@ -35,11 +37,18 @@ a{
     /* background-position-x: 100%; */
     background-repeat: no-repeat;
 }
-.bg-cover{
+#nosotros.bg-cover{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
+}
+
+#nosotros{
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    min-height: 700px;
+    background-image: url('../img/fondo.jpg');
 }
 
 .color-background{
@@ -60,15 +69,32 @@ a{
 .color-background:hover{
     opacity: 1;
 }
-#nosotros{
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
-    min-height: 700px;
-    background-image: url('assets/app/img/fondo.jpg');
-    /*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/app/img/fondo.jpg');*/
-}
 
 .nombre_casa_estudio{
     font-weight: 600;
     padding: 5% !important;
+}
+
+
+/* Seccion Bomboná */
+#somos {
+    background: url('../img/ninos-bombona/bg412.jpg') bottom no-repeat;
+    margin-top: 0 !important;
+}
+#programa {
+    background: url('../img/ninos-bombona/bg_bus.jpg') center no-repeat;
+    margin-top: 3% !important;
+}
+#somos, #programa{
+    height: 800px;
+    background-size: cover;
+    padding: 5%;
+}
+#programa div.w3-section {
+    text-align: center;
+}
+
+#sede {
+    background: url('../img/ninos-bombona/bg_pedazo.jpg') center;
+    margin-top: 0px !important;
 }

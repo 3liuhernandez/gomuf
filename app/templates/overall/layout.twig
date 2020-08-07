@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="assets/app/css/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- TO DO: -->
-    <!--<link rel="stylesheet" href="assets/app/css/font-awesome.min.css">-->
     <link rel="stylesheet" href="assets/app/css/w3-theme-black.css">
     <link rel="stylesheet" href="assets/vendor/toastr/build/toastr.min.css">
     <link rel="stylesheet" href="assets/app/css/app.css">
@@ -22,34 +20,9 @@
     </style>
 </head>
 <body class="w3-content w3-blue" style="max-width:1500px;">
+
 <!-- Navbar (sit on top) -->
-<div class="w3-top topnav">
-    <div class="w3-bar w3-white w3-padding w3-card">
-        <a href="home" class="w3-bar-item w3-button"><b>GOMUF</b></a>
-        <!-- Float links to the right. Hide them on small screens -->
-        <div class="w3-right w3-hide-small w3-text-blue w3-wide">
-            <a href="ebooks/" class="w3-bar-item w3-button w3-hover-none" data-item="ebooks">Proyecto E-book</a>
-            <a href="bombona/" class="w3-bar-item w3-button w3-hover-none" data-item="bombona">Niños Bomboná</a>
-        </div>
-        <div class="w3-left w3-hide-small w3-block">
-            <a href="#nosotros" class="w3-bar-item w3-button w3-hover-none" data-item="nosotros">Nosotros</a>
-            <a href="#valores" class="w3-bar-item w3-button w3-hover-none" data-item="valores">Valores</a>
-            <a href="#staff" class="w3-bar-item w3-button w3-hover-none" data-item="staff">Staff</a>
-            <a href="#campus_accion" class="w3-bar-item w3-button w3-hover-none" data-item="campus_accion">Campus de Acción</a>
-            <a href="#alianzas" class="w3-bar-item w3-button w3-hover-none" data-item="alianzas">Alianzas</a>
-            <a href="#contact" class="w3-bar-item w3-button w3-hover-none" data-item="contact">Contacto</a>
-        </div>
-    </div>
-</div>
-
-<header class="w3-container banner w3-center w3-padding-32 w3-white" style="margin-top: 5%">
-    <h1 class="w3-jumbo"><b>Proyecto Global</b></h1>
-    <h3 class="w3-xxlarge"><b><i>Metamorfosis Universitaria Fraternity</i></b></h3>
-</header>
-
-
-{% include 'overall/banner' %}
-
+<!-- se incluyen en el home de cada seccion -->
 
 {% block appBody %}{% endblock %}
 

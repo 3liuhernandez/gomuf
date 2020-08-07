@@ -1,17 +1,14 @@
 {% extends 'overall/layout' %}
 {% block appBody %}
 
-<style>
-    #proyectos a b:hover a {
-        box-shadow: 5px 5px 5px red;
-    }
-</style>
+<!-- incluyendo el banner al home -->
+{% include 'overall/includes/home' %}
 
 <!-- Proyectos Section -->
-<div class="w3-padding w3-light-grey w3-center w3-container" id="proyectos">
-    <div class="w3-padding-64 w3-container w3-section">
+<div class="w3-padding w3-white w3-center w3-container" id="proyectos">
+    <div class="w3-padding w3-container w3-section">
         <strong class="w3-jumbo w3-text-amber" style="text-shadow:2px 1px 0 black">
-            ¡GoMUF está trabajando en otros materiales y recursos útiles para todos!
+            ¡GoMUF está trabajando en otros materiales y recursos<br> útiles para todos!
         </strong>
     </div>
     <div class="w3-row">
@@ -23,7 +20,7 @@
 
         <div class="w3-container w3-section w3-col lg-4 m4 s6">
             <a class="w3-button w3-xxlarge w3-text-gray w3-hover-none w3-hover-text-red" href="ebooks/">
-                <b>Proyecto E-Books</b>
+                <b>Biblioteca Virtual <br> <span class="w3-xlarge">Metamorfosis Universitaria </span></b>
             </a>
         </div>
 
@@ -51,15 +48,13 @@
 
 
 <!-- nosotros Proyecto MUF Section -->
-<div class="w3-padding-64 w3-light-grey bg-cover" style="background-image: url('assets/app/img/fondo.jpg');" id="nosotros">
+<div class="w3-padding-64 w3-light-grey bg-cover" id="nosotros">
 
-    <div class="w3-row-padding">
-        <div class="w3-col l12 m12 ">
-            <p class="w3-center color-background black-background title">
-                <b class="w3-xxxlarge">Proyecto MUF </b> 
-                <b class="w3-xxlarge w3-text-blue"> Metamorfosis universitaria</b>
-            </p>
-        </div>
+    <div class="w3-section w3-container w3-center" style="width: 70%; margin: auto;">
+        <p class="color-background black-background">
+            <b class="w3-xxxlarge">Proyecto MUF </b>
+            <b class="w3-xxlarge w3-text-blue"> Metamorfosis universitaria</b>
+        </p>
     </div>
 
     <div class="w3-row-padding w3-center">
@@ -168,41 +163,52 @@
     </div>
 
     <div class="w3-row-padding w3-grayscale">
-        <div class="w3-col l1 w3-margin-bottom"></div>
 
-        <div class="w3-col l2 m4 s12 w3-margin-bottom">
+        <div class="w3-col l1 m1 w3-margin-bottom"></div>
+
+        <div class="w3-col l3 m3 s12 w3-margin-bottom">
             <div class="w3-container w3-center">
                 <p class="w3-xlarge">Jesús Izaguirre</p>
-                <img src="assets/app/img/team/jesus.jpg" alt="Jesús Ernesto Izaguirre"  class="w3-image w3-round" width="350" height="500">
+                <img src="assets/app/img/team/jesus.jpg" alt="Jesús Ernesto Izaguirre"  class="w3-image w3-round">
                 <p class="w3-large w3-opacity">Coordinador de Proyecto <br> MUF - UJAP</p>
             </div>
         </div>
 
-        <div class="w3-col l2 m4 s12 w3-margin-bottom">
+        <div class="w3-col l1 m1 w3-margin-bottom"></div>
+
+        <div class="w3-col l3 m3 s12 w3-margin-bottom">
             <div class="w3-container w3-center">
                 <p class="w3-xlarge">Clarismar de Sarría</p>
-                <img src="assets/app/img/team/clarismar.jpg" alt="Clarismar de Sarría"  class="w3-image w3-round" width="350" height="500">
+                <img src="assets/app/img/team/clarismar.jpg" alt="Clarismar de Sarría"  class="w3-image w3-round">
                 <p class="w3-large w3-opacity">Equipo <br>Pastoral MUF <br> Naguanagua - Venezuela</p>
             </div>
         </div>
 
-        <div class="w3-col l2 m4 s12 w3-margin-bottom">
+        <div class="w3-col l1 m1 w3-margin-bottom"></div>
+
+        <div class="w3-col l3 m3 s12 w3-margin-bottom">
             <div class="w3-container w3-center">
                 <p class="w3-xlarge">Leonardo Sarría</p>
-                <img src="assets/app/img/team/leonardo.jpg" alt="Leonardo Sarría"  class="w3-image w3-round" width="350" height="500">
+                <img src="assets/app/img/team/leonardo.jpg" alt="Leonardo Sarría"  class="w3-image w3-round">
                 <p class="w3-large w3-opacity">Equipo <br>Pastoral MUF <br> Naguanagua - Venezuela</p>
             </div>
         </div>
+    </div>
 
-        <div class="w3-col l2 m4 s12 w3-margin-bottom">
+    <div class="w3-row-padding w3-grayscale">
+        <div class="w3-col l2 m2 w3-margin-bottom"></div>
+
+        <div class="w3-col l3 m3 s12 w3-margin-bottom">
             <div class="w3-container w3-center">
                 <p class="w3-xlarge">Natalia Montoya</p>
-                <img src="assets/app/img/team/natalia.jpg" alt="Natalia Montoya"  class="w3-image w3-round" width="350" height="500">
+                <img src="assets/app/img/team/natalia.jpg" alt="Natalia Montoya"  class="w3-image w3-round">
                 <p class="w3-large w3-opacity">Saint-Martin <br> Coordinadora Logística Internacional</p>
             </div>
         </div>
 
-        <div class="w3-col l2 m4 s12 w3-margin-bottom">
+        <div class="w3-col l2 m2 w3-margin-bottom"></div>
+
+        <div class="w3-col l3 m3 s12 w3-margin-bottom">
             <div class="w3-container w3-center">
                 <p class="w3-xlarge">Sylvania Vasquez</p>
                 <img src="assets/app/img/team/sylvania.jpg" alt="Sylvania Vasquez Covault"  class="w3-image w3-round" width="350" height="500">
@@ -215,7 +221,7 @@
 </div>
 
 <!-- campus accion Section -->
-<div class="w3-container" id="campus_accion">
+<div class="w3-container w3-section" id="campus_accion">
     <h3 class="w3-row w3-center w3-jumbo">Campus de Acción<br><i class="w3-text-blue">Esfera Educación</i></h3>
     
     <div class="w3-row w3-row-padding w3-center w3-text-red">
@@ -327,12 +333,11 @@
 </div>
 
 
-<!-- Staff Section -->
-<div class="w3-container w3-white" style="padding:128px 16px" id="staff">
+<div class="w3-container w3-white" style="padding:128px 16px">
     <div class="w3-row-padding w3-center margin-top">
         <div class="w3-col l4 m4 w3-margin-top">
             <div class="w3-card">
-                <img src='assets/app/img/pastores.jpeg' alt="Luzmery Albornoz de Ortega" style="width:100%">
+                <img src='assets/app/img/pastores.jpeg' alt="Dario Ortega y Luzmery Albornoz de Ortega" style="width:100%">
             </div>
         </div>
 
@@ -344,7 +349,6 @@
                 Entrenamiento, charlas, talleres, asesoramiento, conferencias y acompañamiento integral a ministerios y organizaciones. (Liderazgo, Coaching, Psicología, Terapia Psicosocial) 
             </p>
         </div>
-        
     </div>
 </div>
 
@@ -422,6 +426,13 @@
 
 </div>
 
+<style>
+#contact div.w3-panel div.w3-xlarge i.fa {
+    width: 30px;
+    text-align: center;
+}
+</style>
+
 <!-- Container (Contact Section) -->
 <div class="w3-row w3-white" id="contact">
     <div class="w3-content w3-container w3-padding-64" id="contact">
@@ -430,64 +441,54 @@
 
     <div class="w3-row w3-padding-32 w3-section">
         <div class="w3-col m4 w3-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26419.166210981297!2d-68.00438364898079!3d10.161742985473364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e80678bce61928f%3A0x9f78e9eea8c34272!2sValencia%2C%20Carabobo!5e0!3m2!1ses-419!2sve!4v1588049595013!5m2!1ses-419!2sve" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26419.166210981297!2d-68.00438364898079!3d10.161742985473364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e80678bce61928f%3A0x9f78e9eea8c34272!2sValencia%2C%20Carabobo!5e0!3m2!1ses-419!2sve!4v1588049595013!5m2!1ses-419!2sve" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
         <div class="w3-col m8 w3-panel w3-text-gray">
-        <div class="w3-xlarge w3-margin-bottom">
-            <i class="fa fa-map-marker w3-text-blue"></i>Valencia, Venezuela<br>
-            <i class="fa fa-phone w3-text-blue"></i>+58 414 4371968<br>
-            <a href="mailto:contacto.gomuf@gmail.com" target="_blank"> <i class="fa fa-envelope-o w3-text-blue"></i>contacto.gomuf@gmail.com</a><br>
-            <a href="https://www.facebook.com/mufvalencia.ortegaalbornoz/" target="_blank"><i class="fa fa-facebook w3-text-blue"></i>Misión Última Frontera Valencia</a><br>
-            <a href="https://www.instagram.com/mufvalencia/" target="_blank"><i class="fa fa-instagram w3-text-blue"></i>@mufvalencia</a><br>
-        </div>
-        <p class="w3-xlarge">Si gustas contactarte con nosotros, puedes enviarnos un mensaje a nuestro correo electronico o bien puedes escribirnos
-        por aquí: </p>
-        <form id="contact_form">
-            <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-            <div class="w3-half">
-                <input class="w3-input w3-border" type="text" placeholder="Nombre" required name="name">
-            </div>
-            <div class="w3-half">
-                <input class="w3-input w3-border" type="text" placeholder="Correo Electrónico" required name="email">
-            </div>
-            </div>
-            <input class="w3-input w3-border" type="text" placeholder="Mensaje" required name="msj">
-                <button id="contact_btn" class="w3-button w3-green w3-hover-text-green w3-right w3-section" type="submit">
-                <i class="fa fa-paper-plane"></i> Envíar Mensaje
-            </button>
-        </form>
-        </div>
-    </div>
-</div>
+            <div class="w3-xlarge w3-margin-bottom">
+                <i class="fa fa-map-marker w3-text-blue"></i>Valencia, Venezuela
+                <br>
 
-<!-- Modal -->
-<div id="download" class="w3-modal w3-animate-opacity">
-    <div class="w3-modal-content" style="padding:32px">
-        <div class="w3-row">
-            <form id="download_form" class="w3-container w3-white w3-col l6 m7">
-                <h3 class="w3-wide w3-center w3-text-green"><strong>REENCUENTRO CON LAS NUEVAS GENERACIONES POST COVID 19</strong></h3>
-                <hr>
-                <p class="w3-large w3-text-gray">
-                    Antes de descargar una copia del libro, nos gustaría saber tu nombre, tu correo electrónico y también saber que expectativas tienes sobre el.
-                    Esto con el fin de compatir a futuro comentarios sobre el E-book o crear un nuevo contacto con nuevos hermanos en Cristo.</p>
-                <p>
+                <i class="fa fa-phone w3-text-blue"></i>+58 414 4371968
+                <br>
+
+                <a href="mailto:contacto.gomuf@gmail.com" target="_blank" class="w3-hover-text-blue">
+                    <i class="fa fa-envelope-o w3-text-blue"></i>contacto.gomuf@gmail.com
+                </a>
+                <br>
+
+                <a href="https://www.facebook.com/mufvalencia.ortegaalbornoz/" target="_blank" class="w3-hover-text-blue">
+                    <i class="fa fa-facebook w3-text-blue"></i>Misión Última Frontera Valencia
+                </a>
+                <br>
+
+                <a href="https://www.instagram.com/mufvalencia/" target="_blank" class="w3-hover-text-blue">
+                    <i class="fa fa-instagram w3-text-blue"></i>@mufvalencia
+                </a>
+                <br>
+            </div>
+
+            <p class="w3-xlarge w3-block">
+                Si gustas contactarte con nosotros, puedes enviarnos un mensaje a nuestro correo electronico o bien puedes escribirnos por aquí:
+            </p>
+
+            <form id="contact_form" class="w3-block">
                 <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
                     <div class="w3-half">
                         <input class="w3-input w3-border" type="text" placeholder="Nombre" required name="name">
                     </div>
+
                     <div class="w3-half">
                         <input class="w3-input w3-border" type="text" placeholder="Correo Electrónico" required name="email">
                     </div>
+
+                    <div class="w3-col l12 m12 s12 w3-margin-top">
+                        <textarea class="w3-input w3-border" placeholder="Mensaje" required name="msj"></textarea>
+                    </div>
                 </div>
-                <textarea col="5" row="5" class="w3-input w3-border" placeholder="Mensaje" required name="msj"></textarea>
-                <hr>
-                <button id="download_btn" type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Descargar E-Book</button>
+                <button id="contact_btn" class="w3-button w3-hover-green w3-hover-text-white w3-right w3-section" type="submit">
+                    <i class="fa fa-paper-plane"></i> Envíar Mensaje
+                </button>
             </form>
-            <div class="w3-container w3-rest">
-                <i onclick="document.getElementById('download').style.display='none'" class="fa fa-remove w3-xlarge w3-button w3-text-red w3-right w3-hover-text-green w3-hover-white"></i>
-                <br><br><br>
-                <img src="assets/app/img/libros/libro_mini.jpeg" class="w3-image w3-right w3-hide-small" width="335" height="500">
-            </div>
         </div>
     </div>
 </div>

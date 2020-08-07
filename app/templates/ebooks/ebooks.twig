@@ -1,6 +1,10 @@
-{% extends 'overall/layout_ebooks' %}
+{% extends 'overall/layout' %}
 
 {% block appBody %}
+
+    <!-- incluyendo el banner al home -->
+    {% include 'overall/includes/ebooks' %}
+
     <style>
         #e1_parrafo_hidden, #e2_parrafo_hidden, #e3_parrafo_hidden{
             display: none;
