@@ -75,6 +75,11 @@ a{
     padding: 5% !important;
 }
 
+#contact div.w3-panel div.w3-xlarge i.fa {
+    width: 30px;
+    text-align: center;
+}
+
 
 /* Seccion Bomboná */
 #somos {
