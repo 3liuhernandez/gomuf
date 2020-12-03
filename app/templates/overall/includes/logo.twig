@@ -1,0 +1,42 @@
+<a href="home">
+	<img src="assets/app/img/logo_blanco2.png" alt="GoMuf Logo">
+	<h1 class="w3-xxlarge"><b id="titulo_seccion">Proyecto Global</b></h1>
+	<h3 class="w3-xlarge"><b><i>Metamorfosis Universitaria Fraternity</i></b></h3>
+</a>
+
+{% block appFooter %}
+    <script>
+        path = location.pathname.replace('/gomuf.com/', '');
+
+        switch(path){
+            case 'home':
+                console.log('estamos en: ' +path);
+                document.getElementById('titulo_seccion').innerHTML='Proyecto Global';
+                break;
+
+            case 'ebooks/':
+                console.log('estamos en: ' +path);
+	            document.getElementById('titulo_seccion').innerHTML='Biblioteca Virtual';
+                //setTimeout(function(){
+	                //let bg = document.getElementsByClassName('header');
+	                	//bg[0].style.background = "rgb(165,178,209)";
+	                	//bg[0].style.background = "linear-gradient(90deg, rgba(49,49,49,0.8) 0%, rgba(77,86,117,0.85) 35%, rgba(165,178,209,0.9) 100%)";
+                //}, 2000);
+                break;
+
+            case 'piaroa/':
+                console.log('estamos en: ' +path)
+                break;
+
+            case 'bombona/':
+                console.log('estamos en: ' +path)
+                break;
+
+            default:
+                alert(path);
+                window.location.replace('home');
+                break;
+        }
+        
+    </script>
+{% endblock %}
