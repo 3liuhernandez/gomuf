@@ -6,7 +6,9 @@
 
 {% block appFooter %}
     <script>
-        path = location.pathname.replace('/gomuf.com/', '');
+        path = location.pathname.replace('gomuf.com/', '');
+        path = path.replace('/', '');
+
         titulo_seccion = document.getElementById('titulo_seccion');
         switch(path){
             case 'home':
@@ -35,7 +37,7 @@
                 break;
 
             default:
-                //alert(path);
+                console.log(path);
                 //window.location.replace('home');
                 titulo_seccion.innerHTML='Proyecto Global';
                 break;
