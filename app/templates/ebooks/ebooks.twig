@@ -2,28 +2,122 @@
 
 {% block appBody %}
 
-    <!-- incluyendo el banner al home -->
+    <!-- incluyendo el header -->
     {% include 'overall/includes/ebooks' %}
 
-    <style>
-        #e1_parrafo_hidden, #e2_parrafo_hidden, #e3_parrafo_hidden, #e4_parrafo_hidden{
-            display: none;
-        }
-        .sinopsis{
-            width: 80%;
-            margin: 3% auto;
-        }
-    </style>
+    <!-- e-book habla, señor-->
+    <div class="w3-row-padding w3-padding-64 w3-white" id="cuarentena_unbj" >
+        <div class="w3-col l8 m6 margin-top-20">
+            <h3 class="w3-xxlarge w3-text-flat-green-sea w3-center titulo_ebook"><b> Lo que aprendí esta cuarentena <br/>2do. Ebook </b></h3>
+            <p class="sinopsis w3-large">
+                <b>Alianza estratégica:</b><br/>
+                <strong class="strong-no-bolder">
+                    Biblioteca Virtual MUF
+                </strong>
+                    <br/>
+                <strong class="strong-no-bolder">
+                    Unión Nacional Bautista de Jóvenes de Venezuela
+                </strong>
+                <br/><br/>
+                Jóvenes Bautistas Venezolanos Compartiendo sus Experiencias de Resilencia y Resilencia en Tiempo de Cuarentena
+                <br/><br/><br/>
+                <b>Coordinador Proyecto E-Book</b><br/>
+                <strong class="strong-no-bolder">Darío Ortega</strong>
+                <br/><br/>
+                <b>Presidente UNBJ Venezuela</b><br/>
+                <strong class="strong-no-bolder">Iván Eliú Martínez</strong>
+                <br/><br/>
+                <b>Prólogo</b><br/>
+                <strong class="strong-no-bolder">Daniel Moore</strong>
+                <br/><br/>
+                <b>Introducción</b><br/>
+                <strong class="strong-no-bolder">Luzmery Albornoz de Ortega</strong>
+                <br/>
 
-    <!-- e-book joven valiente-->
-    <div class="w3-row-padding w3-padding-64 w3-white" id="joven">
-        <div class="w3-col l8 m6">
-            <h3 class="w3-xxxlarge w3-text-blue w3-center"><b> JOVEN RESILIENTE </b></h3>
+                <span id="cuarentena_unbj_suspensivos" class="w3-hide"> ... </span>
+                <span id="cuarentena_unbj_parrafo_hidden" class="parrafo_hidden"></span>
+            </p>
+
+            <a id="cuarentena_unbj_ver_mas" class="w3-hide w3-right w3-button w3-blue" onclick="readmore('cuarentena_unbj');">
+                Leer mas
+            </a>
+
+        </div>
+        <div class="w3-col l4 m6 w3-center margin-top-20">
+            <div class="w3-display-container">
+                <img src="assets/app/img/libros/cuarentena_unbj_2do_ebook.jpg" class="w3-image w3-margin-top" width="335" height="471">
+
+                <div class="w3-display-middle w3-hide w3-large" onclick="document.getElementById('preview_cuarentena_unbj').style.display='block'">
+                    <button class="w3-button w3-white w3-text-blue w3-hover-white w3-hover-text-green">
+                        Vista Previa del E-Book
+                    </button>
+                </div>
+            </div>
+            <button class="w3-button w3-padding-large w3-section w3-hide-small" onclick="descargar_ebook('6');">
+                <i class="fa fa-download"></i> Adquiere una copia del libro.
+            </button>
+        </div>
+    </div>
+
+    <!-- e-book habla, señor-->
+    <div class="w3-row-padding w3-padding-64 w3-white" id="habla_señor" >
+        <div class="w3-col l8 m6 margin-top-10">
+            <h3 class="w3-xxlarge w3-text-flat-midnight-blue w3-center titulo_ebook"><b> Habla, Señor, que tú Siervo Escucha </b></h3>
+            <p class="sinopsis w3-large">
+                <b>Alianza estratégica:</b><br/>
+                <strong class="strong-no-bolder">
+                    Biblioteca Virtual MUF
+                </strong>
+                    <br/>
+                <strong class="strong-no-bolder">
+                    Unión de Pastores Bautistas de Venezuela
+                </strong>
+                <br/><br/>
+                <b>Inspirador y desafiante Ebook donde:
+                </b><br/>
+                20 Pastores Bautistas Venezolanos Compartiendo sus Experiencias de Llamamiento al Ministerio y Resilencia en Tiempo de Crisis.
+                <br/><br/><br/>
+                <b>Coordinador Proyecto E-Book</b><br/>
+                <strong class="strong-no-bolder">Darío Ortega</strong>
+                <br/><br/>
+                <b>Prólogo</b><br/>
+                <strong class="strong-no-bolder">Jorge Arias</strong>
+                <br/>
+
+                <span id="habla_señor_suspensivos" class="w3-hide"> ... </span>
+                <span id="habla_señor_parrafo_hidden" class="parrafo_hidden"></span>
+            </p>
+
+            <a id="habla_señor_ver_mas" class="w3-hide w3-right w3-button w3-blue" onclick="readmore('habla_señor');">
+                Leer mas
+            </a>
+
+        </div>
+        <div class="w3-col l4 m6 w3-center margin-top-10">
+            <div class="w3-display-container">
+                <img src="assets/app/img/libros/habla_señor_ebook.jpg" class="w3-image w3-margin-top" width="335" height="471">
+
+                <div class="w3-display-middle w3-hide w3-large" onclick="document.getElementById('preview_habla_señor').style.display='block'">
+                    <button class="w3-button w3-white w3-text-blue w3-hover-white w3-hover-text-green">
+                        Vista Previa del E-Book
+                    </button>
+                </div>
+            </div>
+            <button class="w3-button w3-padding-large w3-section w3-hide-small" onclick="descargar_ebook('5');">
+                <i class="fa fa-download"></i> Adquiere una copia del libro.
+            </button>
+        </div>
+    </div>
+
+    <!-- e-book joven resiliente-->
+    <div class="w3-row-padding w3-padding-64 w3-white" id="joven" >
+        <div class="w3-col l8 m6 margin-top-10">
+            <h3 class="w3-xxlarge w3-text-flat-belize-hole w3-center titulo_ebook"><b> JOVEN RESILIENTE </b></h3>
             <p class="sinopsis w3-large">
                 Ser adolescente o joven en esta época tan convulsionada a nivel mundial es un gran desafío. Esta etapa de la vida es una extraordinaria oportunidad para formular y desarrollar un proyecto de vida centrado en el propósito de Dios.<br><br>
 
-                La resiliencia es una virtud dada por Dios a todo ser humano. Es factible ser joven resiliente para enfrentar la crisis de la vida y por encima de todo cumplir su misión de vida. <span id="e4_suspensivos"> ... </span>
-                <span id="e4_parrafo_hidden">
+                La resiliencia es una virtud dada por Dios a todo ser humano. Es factible ser joven resiliente para enfrentar la crisis de la vida y por encima de todo cumplir su misión de vida. <span id="joven_suspensivos"> ... </span>
+                <span id="joven_parrafo_hidden" class="parrafo_hidden">
                 Este libro nos presenta una visión desde la perspectiva juvenil de la resiliencia y sus beneficios para el joven.
                 <br><br>
 
@@ -31,23 +125,25 @@
                 <br><br>
                 Recurso imprescindible para los padres, líderes juveniles, maestros, docentes universitarios, entrenadores deportivos y todo aquel que trabaje en las nuevas generaciones.
                 </span>
-            </p>
+                <br/>
 
-            <a id="e4_ver_mas" class="w3-right w3-button w3-blue" onclick="e4_readmore();">
-                Leer mas
-            </a>
+                <a id="joven_ver_mas" class="w3-right w3-button w3-blue" onclick="readmore('joven');">
+                    Leer mas
+                </a>
 
-            <p>
-                <i>
-                    <strong class="w3-xlarge">
-                    Autor: Darío Ortega <br>
-                    Prólogo: Misionera Lic. Robín Elizabeth White de Tinley.<br>
-                    Introducción: Dra. Lupita Moore.
-                    </strong>
-                </i> &nbsp;
+                <br/><br/>
+                <b>Autor</b><br/>
+                <strong class="strong-no-bolder">Darío Ortega</strong>
+                <br/><br/>
+                <b>Prólogo</b><br/>
+                <strong class="strong-no-bolder">Misionera Lic. Robín Elizabeth White de Tinley</strong>
+                <br/><br/>
+                <b>Introducción</b><br/>
+                <strong class="strong-no-bolder">Dra. Lupita Moore </strong>
             </p>
+            
         </div>
-        <div class="w3-col l4 m6 w3-center">
+        <div class="w3-col l4 m6 w3-center margin-top-10">
             <div class="w3-display-container">
                 <img src="assets/app/img/libros/joven_resilente.jpeg" class="w3-image w3-margin-top" width="335" height="471">
 
@@ -63,51 +159,36 @@
         </div>
     </div>
 
-    <script>
-        function e4_readmore(){
-            boton = document.getElementById("e4_ver_mas");
-            parrafo_hidden = document.getElementById("e4_parrafo_hidden");
-            puntos_suspensivos = document.getElementById("e4_suspensivos");
-
-            if (puntos_suspensivos.style.display === "none") {
-                puntos_suspensivos.style.display = "inline";
-                boton.innerHTML = "Leer mas";
-                parrafo_hidden.style.display = "none";
-            } else {
-                puntos_suspensivos.style.display = "none";
-                boton.innerHTML = "Menos";
-                parrafo_hidden.style.display = "inline";
-            }
-        }
-    </script>
-
     <!-- ebook llamado misionera a cyberia -->
     <div class="w3-row-padding w3-padding-64 w3-white" id="cyberia">
-        <div class="w3-col l8 m6">
-            <h3 class="w3-xxxlarge w3-text-blue w3-center"><b> Llamado Misionero a Cyberia </b></h3>
+        <div class="w3-col l8 m6 margin-top-10">
+            <h3 class="w3-xxlarge w3-text-blue w3-center titulo_ebook"><b> Llamado Misionero a Cyberia </b></h3>
             <p class="sinopsis w3-large">
                 Nuevos escenarios, nueva normalidad, nuevos desafíos nos presentan nuevas oportunidades de cumplir la MISIÓN<br><br>
 
                 La dinámica digital con su virtualidad está formando a los jóvenes que interactúan con sus pares, contactando a los de otras generaciones y formando una nueva forma de concebir la cultura, o mejor dicho el inicio de la nueva cibercultura, propia de la naciente Nación Cyberia.<br><br>
 
-                Dios está llamando a los creyentes a cumplir la misión integral con una visión glocal, de alcance y discipulado en Cyberia (ciberespacio). <span id="e3_suspensivos"> ... </span>
-                <span id="e3_parrafo_hidden">
+                Dios está llamando a los creyentes a cumplir la misión integral con una visión glocal, de alcance y discipulado en Cyberia (ciberespacio). <span id="cyberia_suspensivos"> ... </span>
+                <span id="cyberia_parrafo_hidden" class="parrafo_hidden">
                 <br><br>
                 Este E-Book nos presenta una perspectiva sociológica, antropológia, teológica y bíblica del desafío-oportunidad que nos presentan las comunidades virtuales. El misionero Pablo Tinley aportó el prólogo, otros han hecho su aporte para esta publicación.
                 </span>
+                <br/>
+
+                <a id="cyberia_ver_mas" class="w3-right w3-button w3-blue" onclick="readmore('cyberia');">
+                    Leer mas
+                </a>
+
+                <br/><br/>
+                <b>Autor</b><br/>
+                <strong class="strong-no-bolder">Darío Ortega</strong>
+                <br/><br/>
+                <b>Prólogo</b><br/>
+                <strong class="strong-no-bolder">Pablo Tinley</strong>
             </p>
 
-            <a id="e3_ver_mas" class="w3-right w3-button w3-blue" onclick="e3_readmore();">
-                Leer mas
-            </a>
-
-            <p>
-                <i>
-                    <strong class="w3-xxlarge">Autor: Darío Ortega <br> Prólogo: Pablo Tinley</strong>
-                </i> &nbsp;
-            </p>
         </div>
-        <div class="w3-col l4 m6 w3-center">
+        <div class="w3-col l4 m6 w3-center margin-top-10">
             <div class="w3-display-container">
                 <img src="assets/app/img/libros/mini_llamado_misionero_ciberia.jpg" class="w3-image w3-margin-top" width="335" height="471">
 
@@ -123,35 +204,16 @@
         </div>
     </div>
 
-    <script>
-        function e3_readmore(){
-            boton = document.getElementById("e3_ver_mas");
-            parrafo_hidden = document.getElementById("e3_parrafo_hidden");
-            puntos_suspensivos = document.getElementById("e3_suspensivos");
-
-            if (puntos_suspensivos.style.display === "none") {
-                puntos_suspensivos.style.display = "inline";
-                boton.innerHTML = "Leer mas";
-                parrafo_hidden.style.display = "none";
-            } else {
-                puntos_suspensivos.style.display = "none";
-                boton.innerHTML = "Menos";
-                parrafo_hidden.style.display = "inline";
-            }
-        }
-    </script>
-
-
-
+    <!-- ebook lo que aprendí en cuarentena -->
     <div class="w3-row-padding w3-padding-64 w3-white" id="cuarentena">
-        <div class="w3-col l8 m6">
-            <h3 class="w3-xxxlarge w3-text-red w3-center"><b> LO QUE APRENDÍ EN ESTA CUARENTENA </b></h3>
+        <div class="w3-col l8 m6 margin-top-10">
+            <h3 class="w3-xxlarge w3-text-red w3-center titulo_ebook"><b> LO QUE APRENDÍ EN ESTA CUARENTENA </b></h3>
             <p class="sinopsis w3-large">
                 Anunciamos nuestro nuevo recurso digital para todos de forma gratuita. En este E-BOOK varios líderes juveniles de Venezuela, el Caribe, Suramérica, Estados Unidos y Europa, han dedicado tiempo de escribir para compartir sus experiencias resilientes, aprendizajes de crecimiento personal y espiritual en medio de esta Cuarentena.<br><br>
                 <span class="w3-xlarge">Breve descripción del libro:</span><br>
                 Con este E-BOOK la idea es proveer un recurso literario con enfoque espiritual a través de experiencias de resiliencia, aprendizaje bíblico y crecimiento personal, familiar y en valores durante el tiempo de cuarentena.
-                Buscamos alcanzar los siguientes objetivos: <span id="e2_suspensivos"> ... </span> <br>
-                <span id="e2_parrafo_hidden">
+                Buscamos alcanzar los siguientes objetivos: <span id="cuarentena_suspensivos"> ... </span> <br>
+                <span id="cuarentena_parrafo_hidden" class="parrafo_hidden">
                 • Edificar a los lectores con relatos enfocados en la vida espiritual.<br>
                 • Fomentar la resiliencia como estilo de vida para enfrentar las adversidades.<br>
                 • Enseñar principios bíblicos para tiempos de crisis.
@@ -160,18 +222,19 @@
                 <br><br>
                 Es sumamente conveniente la lectura de este libro para lideres juveniles, maestros, docentes, padres y sobre todo los jóvenes que deseen ser inspirados con los testimonios de jóvenes ubicados en varios lugares del mundo, quienes con la ayuda de Dios han vencido siendo resilientes y de la manos de Dios en medio de esta Cuarentena.
                 </span>
+
+                <br/>
+
+                <a id="cuarentena_ver_mas" class="w3-right w3-button w3-blue" onclick="readmore('cuarentena');">
+                    Leer mas
+                </a>
+                <br/><br/>
+                <b class="w3-xlarge">Varios Autores</b>
             </p>
 
-            <a id="e2_ver_mas" class="w3-right w3-button w3-blue" onclick="e2_readmore();">
-                Leer mas
-            </a>
-
-            <p>
-                <i><strong class="w3-xxlarge">Varios Autores </strong> </i>
-            </p>
         </div>
 
-        <div class="w3-col l4 m6 w3-center">
+        <div class="w3-col l4 m6 w3-center margin-top-10">
             <div class="w3-display-container">
                 <img src="assets/app/img/libros/mini_lo_que_aprendi_esta_cuarentena.jpg" class="w3-image w3-margin-top" width="335" height="471">
 
@@ -187,34 +250,16 @@
         </div>
     </div>
 
-    <script>
-        function e2_readmore(){
-            boton = document.getElementById("e2_ver_mas");
-            parrafo_hidden = document.getElementById("e2_parrafo_hidden");
-            puntos_suspensivos = document.getElementById("e2_suspensivos");
-
-            if (puntos_suspensivos.style.display === "none") {
-                puntos_suspensivos.style.display = "inline";
-                boton.innerHTML = "Leer mas";
-                parrafo_hidden.style.display = "none";
-            } else {
-                puntos_suspensivos.style.display = "none";
-                boton.innerHTML = "Menos";
-                parrafo_hidden.style.display = "inline";
-            }
-        }
-    </script>
-
-
+    <!-- ebook reencuentro post covid -->
     <div class="w3-row-padding w3-padding-64 w3-white" id="post-covid">
-        <div class="w3-col l8 m6">
-            <h3 class="w3-xxxlarge w3-text-blue">
+        <div class="w3-col l8 m6 margin-top-10">
+            <h3 class="w3-xxlarge w3-text-win8-cobalt titulo_ebook">
                 <b> REENCUENTRO CON LAS NUEVAS GENERACIONES POST COVID-19</b>
             </h3>
             <p class="sinopsis w3-large">
                 ¿Cómo conectar con las nuevas generaciones post COVID 19? ¿Cuáles serán los nuevos desafíos que nos traerá el nuevo escenario en trabajo con las nuevas generaciones? Este libro nos presenta una cosmovisión desde una perspectiva psicosocial y teológica de lo que podrían ser los posibles escenarios y modos de abordar en la conexión con los jóvenes luego de superada la pandemia.
-                <span id="e1_suspensivos"> ... </span>
-                <span id="e1_parrafo_hidden">
+                <span id="post-covid_suspensivos"> ... </span>
+                <span id="post-covid_parrafo_hidden" class="parrafo_hidden">
                 <br><br>
                 Un vistazo a las nuevas generaciones pre COVID 19, los efectos psicosociales en tiempo de cuarentena, el proceso de ampliar una mayor compresión de la nueva realidad para hacer ser efectivos y eficientes en el abordaje de los jóvenes para ayudarles a desarrollar su potencial integralmente. Anticipar los nuevos desafíos de este escenario post COVID 19, conectando con las nuevas generaciones de forma autentica para promover una metamorfosis total que afecte positivamente el futuro de nuestras naciones.
                 <br><br>
@@ -222,26 +267,25 @@
                 <br><br>
                 GoMUF está trabajando en otros materiales y recursos útiles para todos!
                 </span>
-            </p>
-
-            <a id="e1_ver_mas" class="w3-right w3-button w3-blue" onclick="e1_readmore();">
-                Leer mas
-            </a>
-
-            <p>
-                <i><strong class="w3-xxlarge">Autor: Darío Ortega </strong></i> &nbsp;
+                <br/><br/>
+                <a id="post-covid_ver_mas" class="w3-right w3-button w3-blue" onclick="readmore('post-covid');">
+                    Leer mas
+                </a>
+                <br/><br/>
+                <b>Autor</b><br/>
+                <strong class="strong-no-bolder">Darío Ortega</strong>
                 <a href="https://www.facebook.com/darluz.mufvalencia" target="_blank">
-                    <i class="fa fa-facebook w3-xlarge w3-text-blue"></i>
+                    <i class="fa fa-facebook w3-large w3-text-blue"></i>
                 </a>
                 <a href="https://www.instagram.com/darluz.ortega/" target="_blank">
-                    <i class="fa fa-instagram w3-xlarge w3-text-purple"></i>
+                    <i class="fa fa-instagram w3-large w3-text-purple"></i>
                 </a>
                 <a href="https://wa.link/g2z66d" target="_blank">
-                    <i class="fa fa-whatsapp w3-xlarge w3-text-green"></i>
+                    <i class="fa fa-whatsapp w3-large w3-text-green"></i>
                 </a>
             </p>
         </div>
-        <div class="w3-col l4 m6 w3-center">
+        <div class="w3-col l4 m6 w3-center margin-top-10">
             <div class="w3-display-container">
                 <img src="assets/app/img/libros/libro_mini.jpeg" class="w3-image w3-hide-small " width="335" height="471">
                 <div class="w3-display-middle w3-display-hover w3-large" onclick="document.getElementById('preview_reencuentro').style.display='block'">
@@ -255,24 +299,6 @@
             </button>
         </div>
     </div>
-
-    <script>
-        function e1_readmore(){
-            boton = document.getElementById("e1_ver_mas");
-            parrafo_hidden = document.getElementById("e1_parrafo_hidden");
-            puntos_suspensivos = document.getElementById("e1_suspensivos");
-
-            if (puntos_suspensivos.style.display === "none") {
-                puntos_suspensivos.style.display = "inline";
-                boton.innerHTML = "Leer mas";
-                parrafo_hidden.style.display = "none";
-            } else {
-                puntos_suspensivos.style.display = "none";
-                boton.innerHTML = "Menos";
-                parrafo_hidden.style.display = "inline";
-            }
-        }
-    </script>
 
 
     <!-- Preview misiones en cyberia -->
@@ -377,8 +403,20 @@
                 titulo = "JOVEN RESILIENTE";
                 break;
 
+            case '5':
+                url_pdf = "assets/app/doc/HABLA SEÑOR QUE TU SIERVO ESCUCHA.pdf";
+                src_img = "assets/app/img/libros/habla_señor_ebook.jpg";
+                titulo = "HABLA, SEÑOR, QUE TÚ SIERVO ESCUCHA";
+                break;
+
+            case '6':
+                url_pdf = "assets/app/doc/LO QUE APRENDI ESTA CUARENTENA UNBJ VENEZUELA.pdf";
+                src_img = "assets/app/img/libros/cuarentena_unbj_2do_ebook.jpg";
+                titulo = "LO QUE APRENDÍ ESTA CUARENTENA 2DO EBOOK";
+                break;
+
             default:
-                alert('default');
+                alert('Error al obtener los datos el Ebook');
                 break;
         }
 
@@ -387,6 +425,28 @@
         input_ebook.value = ebook;
         modal.style.display="block";
         document.getElementById('book_type').value = ebook;
+    }
+</script>
+
+<script>
+    function readmore(libro){
+        boton = libro+"_ver_mas";
+        parrafo_hidden = libro+"_parrafo_hidden";
+        puntos_suspensivos = libro + "_suspensivos";
+
+        boton = document.getElementById(boton);
+        parrafo_hidden = document.getElementById(parrafo_hidden);
+        puntos_suspensivos = document.getElementById(puntos_suspensivos);
+
+        if (puntos_suspensivos.style.display === "none") {
+            puntos_suspensivos.style.display = "inline";
+            boton.innerHTML = "Leer mas";
+            parrafo_hidden.style.display = "none";
+        } else {
+            puntos_suspensivos.style.display = "none";
+            boton.innerHTML = "Menos";
+            parrafo_hidden.style.display = "inline";
+        }
     }
 </script>
 {% endblock %}

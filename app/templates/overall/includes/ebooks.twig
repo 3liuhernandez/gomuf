@@ -1,37 +1,18 @@
+{% extends 'overall/includes/layout_include' %}
+{% block style_header %}
+    <style type="text/css">
+        .header{
+            background: rgb(165,178,209);
+            background: linear-gradient(90deg, rgba(49,49,49,0.8) 0%, rgba(77,86,117,0.85) 35%, rgba(165,178,209,0.9) 100%);
+        }
+    </style>
+{% endblock %}
 
-<style type="text/css">
-    .header{
-        background: white;
-        transition: background-color 1s ease-out;
-    }
-
-    .header{
-        background: rgb(165,178,209);
-        background: linear-gradient(90deg, rgba(49,49,49,0.8) 0%, rgba(77,86,117,0.85) 35%, rgba(165,178,209,0.9) 100%);
-    }
-</style>
-
-<header class="header w3-row w3-container w3-padding-32">
-    <div class="logo w3-col l5 m5">
-        {% include 'overall/includes/logo' %}
-
-        <div class="w3-left w3-hide-small w3-block submenu">
-            <a href="ebooks/#joven" class="w3-bar-item w3-button w3-hover-none" data-item="joven">Joven Resiliente</a>
-            <a href="ebooks/#cyberia" class="w3-bar-item w3-button w3-hover-none" data-item="cyberia">Misiones en Cyberia</a>
-            <a href="ebooks/#cuarentena" class="w3-bar-item w3-button w3-hover-none" data-item="cuarentena">En Cuarentena</a>
-            <a href="ebooks/#post-covid" class="w3-bar-item w3-button w3-hover-none" data-item="covid">Post Covid 19</a>
-        </div>
-    </div>
-    {% include 'overall/includes/navtop' %}
-</header>
-
-{% block appFooter %}
-    <!--
-    <script>
-        path = location.pathname.replace('/gomuf.com/', '');
-        if(path == 'ebooks' || path == 'ebooks'){
-            document.querySelector('a[href="ebooks"]').style.color = "gold";
-        };
-    </script>
-    -->
+{% block submenuTop %}
+    <a href="ebooks/#cuarentena_unbj" class="w3-bar-item w3-button w3-hover-none" data-item="cuarentena_unbj">En Cuarentena 2do Ebook</a>
+    <a href="ebooks/#habla_señor" class="w3-bar-item w3-button w3-hover-none" data-item="habla_señor">Habla, Señor</a>
+    <a href="ebooks/#joven" class="w3-bar-item w3-button w3-hover-none" data-item="joven">Joven Resiliente</a>
+    <a href="ebooks/#cyberia" class="w3-bar-item w3-button w3-hover-none" data-item="cyberia">Misiones en Cyberia</a>
+    <a href="ebooks/#cuarentena" class="w3-bar-item w3-button w3-hover-none" data-item="cuarentena">En Cuarentena</a>
+    <a href="ebooks/#post-covid" class="w3-bar-item w3-button w3-hover-none" data-item="covid">Post Covid 19</a>
 {% endblock %}

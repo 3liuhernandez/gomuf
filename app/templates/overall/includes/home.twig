@@ -1,17 +1,10 @@
-<header class="header w3-row w3-container w3-padding-32">
-    <div class="logo w3-col l5 m5">
-        {% include 'overall/includes/logo' %}
+{% extends 'overall/includes/layout_include' %}
 
-        <div class="w3-left w3-hide-small w3-block submenu">
-            <a href="#nosotros" class="w3-bar-item w3-button w3-hover-none" data-item="nosotros">Nosotros</a>
-            <a href="#valores" class="w3-bar-item w3-button w3-hover-none" data-item="valores">Valores</a>
-            <a href="#staff" class="w3-bar-item w3-button w3-hover-none" data-item="staff">Staff</a>
-            <a href="#campus_accion" class="w3-bar-item w3-button w3-hover-none" data-item="campus_accion">Campus de Acción</a>
-            <a href="#alianzas" class="w3-bar-item w3-button w3-hover-none" data-item="alianzas">Alianzas</a>
-            <a href="#contact" class="w3-bar-item w3-button w3-hover-none" data-item="contact">Contacto</a>
-        </div>
-    </div>
-    {% include 'overall/includes/navtop' %}
-</header>
-
-{% include 'overall/banner' %}
+{% block submenuTop %}
+    <a href="#nosotros" class="w3-bar-item w3-button w3-hover-none" data-item="nosotros">Nosotros</a>
+    <a href="#valores" class="w3-bar-item w3-button w3-hover-none" data-item="valores">Valores</a>
+    <a href="#staff" class="w3-bar-item w3-button w3-hover-none" data-item="staff">Staff</a>
+    <a href="#campus_accion" class="w3-bar-item w3-button w3-hover-none" data-item="campus_accion">Campus de Acción</a>
+    <a href="#alianzas" class="w3-bar-item w3-button w3-hover-none" data-item="alianzas">Alianzas</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hover-none" data-item="contact">Contacto</a>
+{% endblock %}

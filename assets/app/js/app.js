@@ -1,5 +1,5 @@
 var campus_accion = document.getElementById('campus_accion');
-var images = [
+var images_campus = [
     'assets/app/img/actividades_instituciones/act_img1.jpg',
     'assets/app/img/actividades_instituciones/act_img2.jpg',
     'assets/app/img/actividades_instituciones/act_img3.jpg',
@@ -8,12 +8,12 @@ var images = [
 ];
 
 var i = 0;
-campus_accion.style.backgroundImage = "url('"+images[i]+"')";
+campus_accion.style.backgroundImage = "url('"+images_campus[i]+"')";
 
 setInterval(() => {
     i++;
     if(i > 4) i = 0;
-    campus_accion.style.backgroundImage = "url('"+images[i]+"')";
+    campus_accion.style.backgroundImage = "url('"+images_campus[i]+"')";
 }, 5000);
 
 

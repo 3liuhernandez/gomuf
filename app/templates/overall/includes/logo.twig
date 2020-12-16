@@ -1,22 +1,22 @@
-<a href="home">
-	<img src="assets/app/img/logo_blanco2.png" alt="GoMuf Logo">
-	<h1 class="w3-xxlarge"><b id="titulo_seccion">Proyecto Global</b></h1>
-	<h3 class="w3-xlarge"><b><i>Metamorfosis Universitaria Fraternity</i></b></h3>
-</a>
+<div class="" id="banner_head">
+	<img src="assets/app/img/logo_blanco2.png" id="logo_img" alt="GoMuf Logo">
+	<h1><b class="w3-xxlarge" id="titulo_seccion">Proyecto Global</b></h1>
+	<h3 class="w3-xlarge" id="subtitulo_seccion"><b><i>Metamorfosis Universitaria Fraternity</i></b></h3>
+</div>
 
 {% block appFooter %}
     <script>
         path = location.pathname.replace('/gomuf.com/', '');
-
+        titulo_seccion = document.getElementById('titulo_seccion');
         switch(path){
             case 'home':
-                console.log('estamos en: ' +path);
-                document.getElementById('titulo_seccion').innerHTML='Proyecto Global';
+                //console.log('estamos en: ' +path);
+                titulo_seccion.innerHTML='Proyecto Global';
                 break;
 
             case 'ebooks/':
-                console.log('estamos en: ' +path);
-	            document.getElementById('titulo_seccion').innerHTML='Biblioteca Virtual';
+                //console.log('estamos en: ' +path);
+	            titulo_seccion.innerHTML='Biblioteca Virtual';
                 //setTimeout(function(){
 	                //let bg = document.getElementsByClassName('header');
 	                	//bg[0].style.background = "rgb(165,178,209)";
@@ -25,18 +25,20 @@
                 break;
 
             case 'piaroa/':
-                console.log('estamos en: ' +path)
+                //console.log('estamos en: ' +path)
+                titulo_seccion.innerHTML='<span>Coordinación</span><br/><span>Misión Piaroa</span><br/><span>de la IBMUF Valencia</span>';
                 break;
 
             case 'bombona/':
-                console.log('estamos en: ' +path)
+                //console.log('estamos en: ' +path)
+                titulo_seccion.innerHTML='Proyecto Bomboná';
                 break;
 
             default:
-                alert(path);
-                window.location.replace('home');
+                //alert(path);
+                //window.location.replace('home');
+                titulo_seccion.innerHTML='Proyecto Global';
                 break;
         }
-        
     </script>
 {% endblock %}

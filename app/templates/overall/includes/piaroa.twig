@@ -1,32 +1,15 @@
-<!-- Navbar (sit on top) -->
-<div class="w3-top topnav">
-    <div class="w3-bar w3-white w3-padding w3-card">
-        <a href="home" class="w3-bar-item w3-button"><b> <i class="fa fa-home"></i> GOMUF</b></a>
-        <div class="w3-right w3-hide-small w3-text-blue w3-wide">
-            <a href="ebooks/" class="w3-bar-item w3-button w3-hover-none" data-item="ebooks">Biblioteca Virtual</a>
-            <a href="bombona/" class="w3-bar-item w3-button w3-hover-none" data-item="bombona">Niños Bomboná</a>
-            <a href="piaroa/" class="w3-bar-item w3-button w3-hover-none" data-item="piaroa">Misión Piaroa</a>
-        </div>
+{% extends 'overall/includes/layout_include' %}
+{% block style_header %}
+    <style type="text/css">
+        .header{
+            background: rgb(0,102,0);
+            background: linear-gradient(90deg, rgba(0,102,0,.95) 0%, rgba(51,153,51,.93) 50%, rgba(102,204,102,.87) 100%);
+        }
+    </style>
+{% endblock %}
 
-        <!-- Float links to the right. Hide them on small screens -->
-        <div class="w3-left w3-hide-small w3-block w3-hide">
-            <a href="ebooks/#joven" class="w3-bar-item w3-button w3-hover-none" data-item="joven">Joven Resiliente</a>
-            <a href="ebooks/#cyberia" class="w3-bar-item w3-button w3-hover-none" data-item="cyberia">Misiones en Cyberia</a>
-            <a href="ebooks/#cuarentena" class="w3-bar-item w3-button w3-hover-none" data-item="cuarentena">En Cuarentena</a>
-            <a href="ebooks/#post-covid" class="w3-bar-item w3-button w3-hover-none" data-item="covid">Post Covid 19</a>
-        </div>
-    </div>
-</div>
-
-<script>
-    console.log(location.pathname.replace('/gomuf.com/', ''));
-</script>
-
-<header class="w3-container logo-header w3-center w3-padding-32 w3-white" style="margin-top: 5%">
-    <h1 class="w3-jumbo">
-        <strong class="w3-text-green">
-            Coordinación <br><span class="w3-xxxlarge"> Misión Piaroa de la IBMUF Valencia </span>
-        </strong>
-    </h1>
-    <hr style="width: 50%; margin: 1% auto; color: blue">
-</header>
+{% block submenuTop %}
+    <a href="piaroa/#misiones" class="w3-bar-item w3-button w3-hover-none" data-item="misiones">Misiones</a>
+    <a href="piaroa/#programa" class="w3-bar-item w3-button w3-hover-none" data-item="programa">Programa</a>
+    <a href="piaroa/#galeria" class="w3-bar-item w3-button w3-hover-none" data-item="galeria">Galeria</a>
+{% endblock %}

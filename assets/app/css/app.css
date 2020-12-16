@@ -9,46 +9,56 @@ a{
 }
 .header{
     z-index:  1000;
-    /*background: rgb(165,178,209);
-    background: linear-gradient(90deg, rgba(165,178,209,0.9) 0%, rgba(77,86,117,0.85) 35%, rgba(49,49,49,0.8) 100%);*/
-    
-    /*
-    background: rgb(0,19,106);
-    background: linear-gradient(90deg, rgba(0,19,106,0.9) 0%, rgba(29,44,112,0.85) 35%, rgba(99,107,143,0.8) 100%);
-    */
-
     background: rgb(16,45,125);
     background: linear-gradient(90deg, rgba(16,45,125,1) 0%, rgba(85,100,161,.5) 65%, rgba(238,241,255,.4) 100%);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 99;
 }
 
-.header img, .header h1, .header h2, .header div#menu-top{
+.header img, .header h1, .header h2, .header div#menu-top, .header #submenu{
+    display: inline;
+    vertical-align: middle;
+}
+.header h1 b{
     display: inline-block;
+}
+.header h1 b #titulo_seccion span{
+    display: block;
 }
 
 .header img{
     width: 150px;
     height: 125px;
+    transition-property: width height;
+    transition-duration: .6s;
+    transition-timing-function: linear;
+    transition-delay: .3s;
 }
-.header .submenu{
-    width: 600px;
+.header #submenu{
+    width: 900px;
 }
 
-.header .submenu a, .header #menu-top a{
-    padding: 1%;
-    margin: 1%;
+.header #submenu a, .header #menu-top a{
+    padding: .5%;
+    margin: .5%;
     text-shadow: 0px 0px 5px black;
 }
 
-.header .submenu a:hover, .header #menu-top a:hover{
+.header #submenu a:hover, .header #menu-top a:hover{
     color: gold !important;
     text-shadow: 0px 0px 0px;
 }
 
+.header #menu-top{
+    margin-top: 2%;
+}
 .header #menu-top a{
     font-size: 100%;
 }
 
-.header .submenu a:hover{
+.header #submenu a:hover{
     background-color: #ffffff36 !important;
 }
 /*end header style */
@@ -72,19 +82,25 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.banner-image0 {
-    background-image: url("../img/libros/joven_resilente.jpeg");
-}
 .banner-image1 {
-    background-image: url("../img/libros/llamado_misionero_ciberia.jpg");
+    background-image: url("../img/libros/cuarentena_unbj_2do_ebook.jpg");
 }
 .banner-image2 {
-    background-image: url("../img/libros/lo_que_aprendi_esta_cuarentena.jpg");
+    background-image: url("../img/libros/habla_señor_ebook.jpg");
 }
 .banner-image3 {
-    background-image: url("../img/libros/libro.jpg");
+    background-image: url("../img/libros/joven_resilente.jpeg");
 }
 .banner-image4 {
+    background-image: url("../img/libros/llamado_misionero_ciberia.jpg");
+}
+.banner-image5 {
+    background-image: url("../img/libros/lo_que_aprendi_esta_cuarentena.jpg");
+}
+.banner-image6 {
+    background-image: url("../img/libros/libro.jpg");
+}
+.banner-image7 {
     background-image: url("../img/banners/bunker_logo.jpg");
     background-position: bottom;
 }
@@ -290,25 +306,76 @@ a{
 }
 
 
+/* EBOOKS !!!*/
+.parrafo_hidden{
+    display: none;
+}
+.sinopsis{
+    width: 80%;
+    margin: 3% auto;
+}
+
+.titulo_ebook{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.strong-no-bolder {
+    font-weight: normal;
+}
+.margin-top-10{
+    margin-top: 10%;
+}
+.margin-top-20{
+    margin-top: 20%;
+}
+
+
 /* Seccion Bomboná */
-#somos {
+.vision_bombona {
     background: url('../img/ninos-bombona/bg412.jpg') bottom no-repeat;
     margin-top: 0 !important;
 }
-#programa {
+.programa_bombona {
     background: url('../img/ninos-bombona/bg_bus.jpg') center no-repeat;
     margin-top: 3% !important;
 }
-#somos, #programa{
+.vision_bombona, .programa_bombona{
     height: 800px;
     background-size: cover;
     padding: 5%;
 }
-#programa div.w3-section {
+.programa_bombona div.w3-section {
     text-align: center;
 }
 
-#sede {
+.sede_bombona {
     background: url('../img/ninos-bombona/bg_pedazo.jpg') center;
     margin-top: 0px !important;
+}
+
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    /*width: 120px;*/
+    background-color: rgba(0, 0, 0, .8);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }
