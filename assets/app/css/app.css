@@ -24,9 +24,6 @@ a{
 .header h1 b{
     display: inline-block;
 }
-.header h1 b#titulo_seccion span{
-    display: block;
-}
 
 .header img{
     width: 150px;
