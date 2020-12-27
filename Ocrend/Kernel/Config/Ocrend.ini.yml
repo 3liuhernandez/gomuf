@@ -39,7 +39,7 @@ twig:
 build:
   production: false
   name: Gomuf
-  url: http://localhost/gomuf.com/
+  url: http://localhost/gomuf/gomuf.com/
   timezone: America/Caracas
   version: 3.0.1
 
@@ -59,4 +59,4 @@ api:
 # Configuración de ruta
 router:
   ssl: false
-  path: localhost/gomuf.com/
+  path: localhost/gomuf/gomuf.com/
