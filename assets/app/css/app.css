@@ -119,6 +119,7 @@ a{
 }
 /*end style banner section */
 
+
 /* style for news section*/
 #news{
     /*background: url("assets/app/img/news/bg1.jpg") center no-repeat;*/
@@ -249,7 +250,7 @@ a{
     position: relative;
     z-index: 1;
 }
-#campus_accion::before, #alianzas::before{
+#campus_accion::before, #alianzas::before, #banner_fb::before{
     position: absolute;
     left: 0;
     top: 0;

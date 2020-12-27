@@ -1,3 +1,7 @@
 /app/templates/.compiled/**/*.php
-*.zip
 *.yml
+*.zip
+*.sql
+.htaccess
+/Ocrend/*.*
+/Ocrend/Kernel/Config/
