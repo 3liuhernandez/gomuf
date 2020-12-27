@@ -4,4 +4,4 @@
 *.sql
 .htaccess
 /Ocrend/*.*
-/Ocrend/Kernel/Config/
+/Ocrend/Kernel/Config/*.*
