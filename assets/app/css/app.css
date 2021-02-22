@@ -73,12 +73,13 @@ a{
     filter: blur(8px);
     -webkit-filter: blur(8px);
     /* Full height */
-    height: 800px;
+    height: 500px;
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .banner-image1 {
     background-image: url("../img/libros/cuarentena_unbj_2do_ebook.jpg");
 }
@@ -101,6 +102,7 @@ a{
     background-image: url("../img/banners/bunker_logo.jpg");
     background-position: bottom;
 }
+
 /* Position text in the middle of the page/image */
 .banner-text {
     background-color: rgb(0,0,0); /* Fallback color */
@@ -121,25 +123,20 @@ a{
 
 
 /* style for news section*/
-#news{
-    /*background: url("assets/app/img/news/bg1.jpg") center no-repeat;*/
-    background-size: 100%;
+#news_img img{
+    width: 80%;
 }
+
+#news{ background-size: 100%;}
 #news_galeria:after {
     content: "";
     display: table;
     clear: both;
 }
-#news_galeria {
-    text-align: center;
-    display: block;
+#news_galeria { text-align: center; display: block;
 }
-.newsMySlides {
-    display: none;
-}
-.cursor {
-    cursor: pointer;
-}
+.newsMySlides {display: none;}
+.cursor { cursor: pointer;}
 /* The Modal (background) */
 .newsModal {
     display: none;
@@ -196,16 +193,12 @@ a{
     -webkit-user-select: none;
 }
 /* Position the "next button" to the right */
-#newsMyModal .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
+#newsMyModal .next { right: 0; border-radius: 3px 0 0 3px;
 }
 /* On hover, add a black background color with a little bit see-through */
 #newsMyModal .prev:hover,
 #newsMyModal .next:hover,
-#newsMyModal .close:hover {
-    background-color: rgba(115, 113, 113, 0.47);
-}
+#newsMyModal .close:hover { background-color: rgba(115, 113, 113, 0.47);}
 #newsMyModal .numbertext {
     color: white;
     font-size: 12px;
@@ -218,19 +211,11 @@ a{
     width: 40%;
     margin: 1%;
 }
-#newsMyModal .demo {
-    opacity: 0.4;
-}
+#newsMyModal .demo { opacity: 0.4;}
 #newsMyModal .active,
-#newsMyModal .demo:hover {
-    opacity: 1;
-}
-#news_galeria img.hover-shadow {
-    transition: 0.3s;
-}
-#news_galeria img.hover-shadow:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+#newsMyModal .demo:hover { opacity: 1;}
+#news_galeria img.hover-shadow {transition: 0.3s;}
+#news_galeria img.hover-shadow:hover {  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
 #newsMyModal img{
     width: 50%;
     margin-left: 25%;
